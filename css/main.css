@@ -8745,6 +8745,8 @@ h5 {
           color: #f7941d;
           margin-left: 5px;
           font-size: 25px; }
+      .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info h3 {
+        font-size: 35px; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info .tcd__tour-list-btn {
         text-align: center; }
     @media (min-width: 576px) {
