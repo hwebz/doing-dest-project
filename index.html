@@ -27,7 +27,7 @@
     <script src="js/modernizr-cus.js"></script>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script><![endif]-->
-    <script src="js/vendors.js"></script><!--<script src="js/loading.min.js"></script>-->
+    <script src="js/vendors.min.js"></script><!--<script src="js/loading.min.js"></script>-->
 <!--End JavaScript Top -->
 <!--[if (gte IE 6)&(lte IE 8)]>
 <script type="text/javascript" src="js/selectivizr-min.js"></script>
@@ -143,18 +143,18 @@
               <li><a href="#"><strong>Một chiều</strong></a></li>
             </ul>
             <form class="tcd__search-form-flight-form" action="#" method="POST">
-              <div class="tcd__search-form-field small-field have-dropdown">
+              <div class="tcd__search-form-field small-field have-dropdown" id="flight-from">
                     <div class="form-group is-invalid has-toggle">
                       <label>Từ</label>
                       <input class="form-control" type="text" placeholder="" required value="Hanoi (HAN)">
                     </div>
                     <div class="invalid-feedback">Vui lòng chọn điểm khởi hành</div>
-                    <button class="btn btn-primary btn-toggle-flight" type="button"><span class="icon-sort"></span></button>
+                    <button class="btn btn-primary btn-toggle-flight" type="button" data-from-element="#flight-from" data-to-element="#flight-to"><span class="icon-sort"></span></button>
                 <div class="tcd__search-form-dropdown-results">
                   <div class="arrow-icon"></div><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-maps-and-flags"></span><span>Hanoi, Vietnam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-appartment"></span><span>Thành phố Hà Nội (HAN), Việt Nam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-takeoff"></span><span>Sân bay Nội Bài (NIA), Hà Nội, Việt Nam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-departures"></span><span>Sân bay Phú Hưng (HBN), Hà Nội, Việt Nam</span></a>
                 </div>
               </div>
-              <div class="tcd__search-form-field small-field have-dropdown">
+              <div class="tcd__search-form-field small-field have-dropdown" id="flight-to">
                     <div class="form-group">
                       <label>Tới</label>
                       <input class="form-control" type="text" placeholder="" required value="Kuala Lumpur (KUL)">
@@ -180,7 +180,7 @@
                     <h4>Loại vé</h4>
                     <ul>
                       <li class="active"><a href="#">Phổ thông</a></li>
-                      <li class="active"><a href="#">Thương gia</a></li>
+                      <li><a href="#">Thương gia</a></li>
                     </ul>
                   </div>
                   <div class="tcd__search-form-passengers">
@@ -420,7 +420,7 @@
       <div class="tcd__contact">
         <div class="container">
           <div class="row">
-            <div class="tcd__contact-form col-12 col-md-9 offset-md-2 col-lg-6 offset-lg-5">
+            <div class="tcd__contact-form">
               <form>
                 <h2>Liên hệ với chúng tôi</h2>
                 <div class="row">
@@ -446,7 +446,7 @@
                         <label>Nội dung</label>
                         <textarea class="form-control" placeholder="" required value=""></textarea>
                       </div>
-                <button class="btn btn-primary" type="button">Gửi tin nhắn</button>
+                <button class="btn btn-primary big" type="button">Gửi tin nhắn</button>
               </form>
             </div>
           </div>
@@ -544,7 +544,7 @@
         </div>
       </div>
     </div>
-    <script src="js/vendors.js"></script><!--<script src="js/loading.min.js"></script>-->
+    <script src="js/vendors.min.js"></script><!--<script src="js/loading.min.js"></script>-->
 <!--End JavaScript Top -->
 <!--[if (gte IE 6)&(lte IE 8)]>
 <script type="text/javascript" src="js/selectivizr-min.js"></script>
