@@ -7947,7 +7947,7 @@ h5 {
   width: 100%;
   height: 100%; }
 
-.tcd__search-form-dropdown-results .tcd__search-form-dropdown-item, .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title, .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-condition p {
+.tcd__search-form-dropdown-results .tcd__search-form-dropdown-item, .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-condition p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
