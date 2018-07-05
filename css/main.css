@@ -7947,7 +7947,7 @@ h5 {
   width: 100%;
   height: 100%; }
 
-.tcd__search-form-dropdown-results .tcd__search-form-dropdown-item, .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-condition p {
+.tcd__search-form-dropdown-results .tcd__search-form-dropdown-item, .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title, .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-condition p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -8144,11 +8144,12 @@ h5 {
     .tcd__header .tcd__header-content .tcd__header-logo img {
       max-height: 50px;
       -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      display: none; }
+      transition: all 0.3s ease-in-out; }
       @media (min-width: 768px) {
         .tcd__header .tcd__header-content .tcd__header-logo img {
           max-height: 100px; } }
+      .tcd__header .tcd__header-content .tcd__header-logo img.mobile {
+        display: none; }
     .tcd__header .tcd__header-content .navbar-toggler {
       border-color: transparent;
       position: absolute;
@@ -8241,6 +8242,10 @@ h5 {
     height: 50px; }
     .tcd__header.scroll-down .tcd__header-content .tcd__header-logo img {
       max-height: 40px; }
+      .tcd__header.scroll-down .tcd__header-content .tcd__header-logo img.desktop {
+        display: none; }
+      .tcd__header.scroll-down .tcd__header-content .tcd__header-logo img.mobile {
+        display: inline-block; }
 
 .tcd__footer {
   background-color: #a33439; }
@@ -8257,8 +8262,7 @@ h5 {
         display: block;
         text-align: center; }
         .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-info .tcd__footer-logo img {
-          max-height: 90px;
-          display: none; }
+          max-height: 90px; }
           @media (min-width: 768px) {
             .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-info .tcd__footer-logo img {
               max-height: 135px; } }
@@ -8967,35 +8971,37 @@ h5 {
     background-repeat: no-repeat;
     background-position: center center;
     margin-right: 10px; }
-  .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title {
-    margin-bottom: 5px; }
-    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title a {
-      color: #231f20; }
-  .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-stars img {
-      width: 12px;
-      height: 12px;
-      margin: 0 1px; }
-  .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-price {
-    margin: 5px 0; }
-    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-price span {
+  .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content {
+    width: calc(100% - 105px); }
+    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title {
+      margin-bottom: 5px; }
+      .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title a {
+        color: #231f20; }
+    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-stars {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-stars img {
+        width: 12px;
+        height: 12px;
+        margin: 0 1px; }
+    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-price {
+      margin: 5px 0; }
+      .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-price span {
+        font-size: 12px; }
+      .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-price strong {
+        display: inline-block;
+        margin-left: 5px;
+        color: #f7941d; }
+    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-address {
       font-size: 12px; }
-    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-price strong {
-      display: inline-block;
-      margin-left: 5px;
-      color: #f7941d; }
-  .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-address {
-    font-size: 12px; }
-    .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-address span[class^="icon-"] {
-      display: inline-block;
-      margin-right: 5px; }
+      .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-address span[class^="icon-"] {
+        display: inline-block;
+        margin-right: 5px; }
 
 .tcd__contact {
   padding: 0; }
