@@ -7318,6 +7318,7 @@ a.text-dark:hover, a.text-dark:focus {
   float: left;
   height: 100%;
   min-height: 1px;
+  outline: none;
   display: none; }
   [dir="rtl"] .slick-slide {
     float: right; }
@@ -8039,14 +8040,15 @@ h5 {
   .form-group label {
     font-size: 12px;
     display: block;
-    margin: 5px 10px; }
+    margin: 5px 10px 0 10px; }
   .form-group .form-control {
     border: 0;
     outline: none;
     -webkit-box-shadow: none;
             box-shadow: none;
     padding-top: 0;
-    background-color: transparent !important; }
+    background-color: transparent !important;
+    padding-bottom: 3px; }
   .form-group + .invalid-feedback {
     color: #ed1c24;
     margin: -10px 0 10px 0; }
@@ -8545,9 +8547,9 @@ h5 {
         overflow: hidden;
         text-overflow: ellipsis; }
     .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .btn-toggle-flight, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .btn-toggle-flight {
-      padding: 3px 7px;
+      padding: 3px 7px !important;
       position: absolute;
-      top: 15px;
+      top: 10px;
       right: 15px;
       -webkit-transform: rotateZ(90deg);
       -khtml-transform: rotateZ(90deg);
@@ -8573,7 +8575,7 @@ h5 {
           min-width: 26%; } }
   .tcd__search-form-tab-content .tcd__search-form-flight-form .btn:not(.btn-toggle-flight), .tcd__search-form-tab-content .tcd__search-form-tour-form .btn:not(.btn-toggle-flight) {
     width: 100%;
-    min-height: 65px; }
+    min-height: 55px; }
 
 .tcd__search-form {
   margin-top: -55px;
@@ -8627,6 +8629,9 @@ h5 {
     background-image: linear-gradient(60deg, #ffc485, #ff8171);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffc485', endColorStr='#ff8171', gradientType='1');
     padding: 20px 0; }
+    @media (min-width: 576px) {
+      .tcd__search-form .tcd__search-form-tab-contents {
+        padding: 20px 0 5px 0; } }
   @media (min-width: 576px) {
     .tcd__search-form {
       margin-top: -75px; } }
@@ -8665,7 +8670,7 @@ h5 {
 
 .tcd__search-form-dropdown-results {
   position: absolute;
-  top: 78px;
+  top: 66px;
   left: 0;
   background-color: #fff;
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
@@ -9101,6 +9106,11 @@ h5 {
       min-width: 70%; }
       .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-introduction {
         color: #231f20; }
+        .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-introduction h3 {
+          margin-top: 10px; }
+        .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-introduction p {
+          margin-bottom: 5px;
+          font-size: 12px; }
       .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-form .tcd__search-form-field .form-group {
         margin-bottom: 10px; }
       .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-form .tcd__search-form-field.big-field {
@@ -9125,14 +9135,41 @@ h5 {
                 -ms-flex-positive: initial;
                     flex-grow: initial;
             margin-left: 7px; } }
-    .tcd__modify-search .tcd__search-form-tab-content .tcd__adv {
-      margin-top: 10px; }
+    .tcd__modify-search .tcd__search-form-tab-content .tcd__adv-slider {
+      margin-top: 10px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      overflow: hidden; }
       @media (min-width: 992px) {
-        .tcd__modify-search .tcd__search-form-tab-content .tcd__adv {
+        .tcd__modify-search .tcd__search-form-tab-content .tcd__adv-slider {
           margin-top: 0; } }
+      .tcd__modify-search .tcd__search-form-tab-content .tcd__adv-slider.initializing {
+        height: 134px;
+        position: relative; }
+        .tcd__modify-search .tcd__search-form-tab-content .tcd__adv-slider.initializing:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 101%;
+          height: 100%;
+          background: #fff url("../img/ajax-loader.gif") no-repeat center center;
+          filter: alpha(opacity=90);
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+          -webkit-opacity: 0.9;
+          -khtml-opacity: 0.9;
+          -moz-opacity: 0.9;
+          -ms-opacity: 0.9;
+          -o-opacity: 0.9;
+          opacity: 0.9;
+          -webkit-transform: translate(-50%, 0);
+          -khtml-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          z-index: 2; }
     @media (min-width: 576px) {
       .tcd__modify-search .tcd__search-form-tab-content {
-        padding: 20px; } }
+        padding: 12px 10px 12px 20px; } }
     @media (min-width: 992px) {
       .tcd__modify-search .tcd__search-form-tab-content {
         -webkit-box-orient: horizontal;
@@ -9151,6 +9188,8 @@ h5 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffc485', endColorStr='#ff8171', gradientType='1');
   color: #fff;
   padding: 9px; }
+  .tcd__adv h4 {
+    margin-bottom: 5px; }
   .tcd__adv .tcd__adv-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9209,7 +9248,7 @@ h5 {
 .tcd__advs {
   background-image: linear-gradient(-60deg, #ffc485, #ff8171);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffc485', endColorStr='#ff8171', gradientType='1');
-  padding: 15px 0; }
+  padding: 10px 0; }
   .tcd__advs .tcd__advs-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9218,7 +9257,8 @@ h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: -15px; }
+    margin-top: -15px;
+    padding: 5px 0; }
     .tcd__advs .tcd__advs-wrapper .tcd__advs-block {
       color: #fff;
       display: -webkit-box;
@@ -9322,9 +9362,13 @@ h5 {
           margin-right: 7px;
           color: #fff;
           display: inline-block;
-          padding: 2px 5px;
+          padding: 4px 4px 3px 4px;
           border-radius: 3px;
-          line-height: 1; }
+          line-height: 1;
+          font-size: 10px;
+          vertical-align: text-top; }
+        .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-condition p span {
+          display: inline-block; }
       .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-condition:last-child {
         margin-bottom: 0; }
     .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-activity {
@@ -9339,7 +9383,8 @@ h5 {
                 flex-direction: row;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
-                justify-content: space-between; }
+                justify-content: space-between;
+        margin: 0; }
         .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-activity h4 a[class^='icon-'] {
           -webkit-transform: rotateZ(-90deg);
           -khtml-transform: rotateZ(-90deg);
@@ -9352,7 +9397,8 @@ h5 {
             -khtml-transform: rotateZ(90deg);
             transform: rotateZ(90deg); }
       .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-activity .tcd__tour-filters-sub-activities {
-        margin-left: 20px; }
+        margin-left: 20px;
+        padding-top: 10px; }
         .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-activity .tcd__tour-filters-sub-activities li {
           margin-top: 5px; }
       .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-activity:last-child {
@@ -9484,6 +9530,10 @@ select {
     margin: 0; }
   .tcd__tour-results .tcd__tour-results-head .sort-options {
     text-align: right; }
+    .tcd__tour-results .tcd__tour-results-head .sort-options select {
+      height: 32px;
+      padding-top: 4px;
+      padding-bottom: 4px; }
 
 .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card {
   background-color: #fff;
@@ -9573,10 +9623,11 @@ select {
           background-color: #ed1c24; }
       .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-info .tcd__tour-results-card-reviews .reviews-info p {
         margin: 0;
-        line-height: 0.8; }
+        line-height: 0.8;
+        margin-top: 2px; }
       .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-info .tcd__tour-results-card-reviews .reviews-info span {
         font-size: 12px;
-        color: #c4ced2; }
+        color: #6b6b6b; }
     .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-info .tcd__tour-results-card-comment {
       margin-top: 5px; }
     .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-info .tcd__tour-results-card-detail-info {
@@ -9594,7 +9645,7 @@ select {
         .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-info .tcd__tour-results-card-detail-info .detail-info-label p {
           margin-bottom: 5px;
           text-transform: uppercase;
-          color: #c4ced2; }
+          color: #6b6b6b; }
       .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-info .tcd__tour-results-card-detail-info .detail-info-text {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
@@ -9647,7 +9698,7 @@ select {
       .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-price-info .tcd__tour-results-card-duration h3 {
         margin-bottom: 0; }
       .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-price-info .tcd__tour-results-card-duration p {
-        color: #c4ced2;
+        color: #6b6b6b;
         font-size: 12px;
         margin: 0; }
     .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card .tcd__tour-results-card-price-info .tcd__tour-results-card-included p {
