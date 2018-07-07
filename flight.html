@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="vi">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="mô tả">
+    <meta name="keywords" content="từ khóa">
+    <meta name="robots" content="noodp,index,follow">
+    <meta name="revisit-after' content='1 days">
+    <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <link rel="stylesheet" href="css/main.css"><!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0; url=detect.html"><script type="text/javascript">
+    <var>regExp = / <![CDATA[ /;</var>
+    <window class="top location">= 'detect.html';</window>
+    <var>regExp = / ]]> /;</var></script>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="js/modernizr-cus.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script><![endif]-->
+    <script src="js/vendors.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBccCirP3qSlRkJi21oAUgQOQckpT5xFVg"></script><!--<script src="js/loading.min.js"></script>-->
+<!--End JavaScript Top -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<noscript><link rel="stylesheet" href="css/styles.css"/></noscript>
+<![endif]-->
+  </head>
+  <body>
+    <div class="tcd__header">
+      <div class="container">
+        <div class="tcd__header-content navbar"><a class="tcd__header-logo navbar-brand" href="#"><img class="desktop" src="img/logo.png" alt="Logo"><img class="mobile" src="img/logo-mobile.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+          <div class="tcd__header-navigation">
+            <button class="navbar-toggler" type="button"><span class="icon-cancel-music"></span></button>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Tuyển dụng</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+              <li class="nav-item">
+                <button class="btn btn-primary small">Đăng ký</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary small">Đăng nhập</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tcd__modify-search">
+      <div class="container">
+        <div class="tcd__search-form-tab-content">
+          <div class="tcd__search-form-wrapper">
+            <ul class="tcd__search-form-flight-types">
+              <li class="active"><a href="#"><strong>Khứ hồi</strong></a></li>
+              <li><a href="#"><strong>Một chiều</strong></a></li>
+            </ul>
+            <form class="tcd__search-form-flight-form" action="#" method="POST">
+              <div class="tcd__search-form-field small-field have-dropdown" id="flight-from">
+                    <div class="form-group is-invalid has-toggle">
+                      <label>Từ</label>
+                      <input class="form-control" type="text" placeholder="" required value="Hanoi (HAN)">
+                    </div>
+                    <div class="invalid-feedback">Vui lòng chọn điểm khởi hành</div>
+                    <button class="btn btn-primary btn-toggle-flight" type="button" data-from-element="#flight-from" data-to-element="#flight-to"><span class="icon-sort"></span></button>
+                <div class="tcd__search-form-dropdown-results">
+                  <div class="arrow-icon"></div><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-maps-and-flags"></span><span>Hanoi, Vietnam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-appartment"></span><span>Thành phố Hà Nội (HAN), Việt Nam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-takeoff"></span><span>Sân bay Nội Bài (NIA), Hà Nội, Việt Nam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-departures"></span><span>Sân bay Phú Hưng (HBN), Hà Nội, Việt Nam</span></a>
+                </div>
+              </div>
+              <div class="tcd__search-form-field small-field have-dropdown" id="flight-to">
+                    <div class="form-group">
+                      <label>Tới</label>
+                      <input class="form-control" type="text" placeholder="" required value="Kuala Lumpur (KUL)">
+                    </div>
+                <div class="tcd__search-form-dropdown-results">
+                  <div class="arrow-icon"></div><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-maps-and-flags"></span><span>Hanoi, Vietnam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-appartment"></span><span>Thành phố Hà Nội (HAN), Việt Nam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-takeoff"></span><span>Sân bay Nội Bài (NIA), Hà Nội, Việt Nam</span></a><a class="tcd__search-form-dropdown-item" href="#"><span class="icon-departures"></span><span>Sân bay Phú Hưng (HBN), Hà Nội, Việt Nam</span></a>
+                </div>
+              </div>
+              <div class="tcd__search-form-field daterange-picker">
+                    <div class="form-group">
+                      <label>Ngày bay</label>
+                      <input class="form-control" type="text" placeholder="" required value="22 Th06 - 28 Th06 2018">
+                    </div>
+              </div>
+              <div class="tcd__search-form-field big-field have-dropdown">
+                    <div class="form-group">
+                      <label>Hành khách</label>
+                      <input class="form-control" type="text" placeholder="" required value="1 người lớn, 2 trẻ em, Phổ thông">
+                    </div>
+                <div class="tcd__search-form-dropdown-results">
+                  <div class="arrow-icon"></div>
+                  <div class="tcd__search-form-ticket-types">
+                    <h4>Loại vé</h4>
+                    <ul>
+                      <li class="active"><a href="#">Phổ thông</a></li>
+                      <li><a href="#">Thương gia</a></li>
+                    </ul>
+                  </div>
+                  <div class="tcd__search-form-passengers">
+                    <h4>Hành khách</h4>
+                    <div class="tcd__search-form-passengers-wrapper">
+                      <div class="tcd__search-form-pax">
+                        <p><span>Người lớn</span><small>(18+)</small></p>
+                        <div class="tcd__search-form-pax-selector">
+                          <button class="btn btn-primary minus" type="button">-</button>
+                          <p>0</p>
+                          <button class="btn btn-primary plus" type="button">+</button>
+                        </div>
+                      </div>
+                      <div class="tcd__search-form-pax">
+                        <p><span>Trưởng thành</span><small>(12-17)</small></p>
+                        <div class="tcd__search-form-pax-selector">
+                          <button class="btn btn-primary minus" type="button">-</button>
+                          <p>0</p>
+                          <button class="btn btn-primary plus" type="button">+</button>
+                        </div>
+                      </div>
+                      <div class="tcd__search-form-pax">
+                        <p><span>Trẻ em</span><small>(2-11)</small></p>
+                        <div class="tcd__search-form-pax-selector">
+                          <button class="btn btn-primary minus" type="button">-</button>
+                          <p>0</p>
+                          <button class="btn btn-primary plus" type="button">+</button>
+                        </div>
+                      </div>
+                      <div class="tcd__search-form-pax">
+                        <p><span>Sơ sinh</span><small>(&lt;2)</small></p>
+                        <div class="tcd__search-form-pax-selector">
+                          <button class="btn btn-primary minus" type="button">-</button>
+                          <p>0</p>
+                          <button class="btn btn-primary plus" type="button">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__search-form-btn">
+                <button class="btn btn-primary tcd__search-btn" type="submit">Tìm chuyến bay</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tcd__results-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="tcd__filters col-12 col-lg-3">
+            <button class="navbar-toggler" type="button"><span class="icon-cancel-music"></span></button>
+            <div class="tcd__filters-block">
+              <h3>Điều kiện lọc</h3>
+              <div class="tcd__filters-content">
+                <div class="tcd__filters-condition">
+                  <h4>Chặng bay:</h4>
+                  <p><a href="#"><span class="icon-cancel-music"></span></a><span>1+ stops</span></p>
+                </div>
+                <div class="tcd__filters-condition">
+                  <h4>Hãng hàng không:</h4>
+                  <p><a href="#"><span class="icon-cancel-music"></span></a><span>Vietjet Air</span></p>
+                </div>
+                <div class="tcd__filters-condition">
+                  <h4>Tiện ích:</h4>
+                  <p><a href="#"><span class="icon-cancel-music"></span></a><span>Thức ăn miễn phí</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="tcd__filters-block">
+              <h3>Chặng bay</h3>
+              <div class="tcd__filters-content">
+                <ul class="tcd__filters-ages">
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-age-0">
+                    <label for="flight-age-0"><span>Nonstop</span></label>
+                  </li>
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-age-1" checked>
+                    <label for="flight-age-1"><span>1+ stop(s)</span></label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tcd__filters-block">
+              <h3>Thời gian bay</h3>
+              <div class="tcd__filters-content">
+                <div id="tcd__flight-filters-duration"></div>
+              </div>
+            </div>
+            <div class="tcd__filters-block">
+              <h3>Hãng cung cấp tour</h3>
+              <div class="tcd__filters-content">
+                <ul class="tcd__filters-providers">
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-airline-0">
+                    <label for="flight-airline-0"><span>Malindo Air</span><img src="img/svg/OD.svg"></label>
+                  </li>
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-airline-1" checked>
+                    <label for="flight-airline-1"><span>Vietjet Air</span><img src="img/svg/VJ.svg"></label>
+                  </li>
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-airline-2">
+                    <label for="flight-airline-2"><span>Vietnam Airlines</span><img src="img/svg/VN.svg"></label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tcd__filters-block">
+              <h3>Giờ khởi hành</h3>
+              <div class="tcd__filters-content">
+                <div id="tcd__flight-filters-departure"></div>
+              </div>
+            </div>
+            <div class="tcd__filters-block">
+              <h3>Giờ hạ cánh</h3>
+              <div class="tcd__filters-content">
+                <div id="tcd__flight-filters-arrival"></div>
+              </div>
+            </div>
+            <div class="tcd__filters-block">
+              <h3>Tiện ích</h3>
+              <div class="tcd__filters-content">
+                <ul class="tcd__filters-ages">
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-util-0">
+                    <label for="flight-util-0"><span>Hành lý xách tay</span></label>
+                  </li>
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-util-1" checked>
+                    <label for="flight-util-1"><span>Thức ăn miễn phí</span></label>
+                  </li>
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-util-2">
+                    <label for="flight-util-2"><span>Màn hình giải trí tại chỗ</span></label>
+                  </li>
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-util-3">
+                    <label for="flight-util-3"><span>WiFi</span></label>
+                  </li>
+                  <li class="tcd__checkbox">
+                    <input type="checkbox" id="flight-util-4">
+                    <label for="flight-util-4"><span>Cổng sạc điện thoại</span></label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tcd__results col-12 col-lg-9">
+            <div class="tcd__results-title">
+              <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon black"></span></button>
+              <h1>Hanoi tới Kuala Lumpur<span>vào ngày 22 Th06 2018</span></h1>
+            </div>
+            <div class="tcd__results-head">
+              <p>Tìm thấy 45 chuyến bay</p>
+              <div class="sort-options">
+                <select class="form-control">
+                  <option>Giá (Thấp tới Cao)</option>
+                  <option>Giá (Cao tới Thấp)</option>
+                  <option>Tên (A tới Z)</option>
+                  <option>Tên (Z tới A)</option>
+                </select>
+              </div>
+            </div>
+            <div class="tcd__results-list">
+              <div class="tcd__results-card type-2 active">
+                <div class="tcd__results-card-wrapper">
+                  <div class="tcd__results-brand"><img src="img/svg/VN.svg">
+                    <h4>Vietnam Airlines</h4>
+                    <p>VN315</p>
+                  </div>
+                  <div class="tcd__results-info">
+                    <div class="tcd__results-column-info">
+                      <h2>11:40</h2>
+                      <p>Hanoi</p>
+                      <p>(HAN)</p>
+                    </div>
+                    <div class="tcd__results-info-center"><span>3h 15m</span><img src="img/svg/airplane.svg"><span>nonstop</span></div>
+                    <div class="tcd__results-column-info">
+                      <h2>13:55</h2>
+                      <p>Kuala Lumpur</p>
+                      <p>(KUL)</p>
+                    </div>
+                  </div>
+                  <div class="tcd__results-price">
+                    <h3>4,500,000đ<span>/người</span></h3>
+                    <p><span class="icon-checked"></span><span>giá đã bao gồm thuế và phí</span></p>
+                    <div class="tcd__results-btns"><a href="#">Chi tiết</a>
+                      <button class="btn btn-primary" type="button">Chọn</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcd__results-detail active">
+                  <div class="tcd__results-detail-card">
+                    <div class="tcd__results-detail-brand"><img src="img/svg/VN.svg">
+                      <h4>Vietnam Airlines</h4>
+                      <p>Phổ thông - VN315</p>
+                    </div>
+                    <div class="tcd__results-detail-info">
+                      <div class="tcd__results-detail-vertical-line"><span></span></div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>11:40</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Hanoi<span>(HAN)</span></p>
+                          <p>Noi Bai International Airport</p>
+                        </div>
+                      </div>
+                      <div class="tcd__results-detail-info-middle">
+                        <p>1h 0m</p>
+                      </div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>13:55</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Kuala Lumpur<span>(KUL)</span></p>
+                          <p>Kuala Lumpur International Airport</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tcd__results-detail-utils">
+                      <ul>
+                        <li>Hành lý xách tay (7kg)</li>
+                        <li>Miễn phí đồ ăn</li>
+                        <li>Màn hình giải trí tại chỗ</li>
+                        <li>Cổng sạc điện thoại</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tcd__results-detail-stopover">
+                    <p>Nối chuyến tại: <strong>Ho Chi Minh</strong><span> - Thời gian chờ: </span><strong>1h 10m</strong></p>
+                  </div>
+                  <div class="tcd__results-detail-card">
+                    <div class="tcd__results-detail-brand"><img src="img/svg/VN.svg">
+                      <h4>Vietnam Airlines</h4>
+                      <p>Phổ thông - VN315</p>
+                    </div>
+                    <div class="tcd__results-detail-info">
+                      <div class="tcd__results-detail-vertical-line"><span></span></div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>11:40</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Hanoi<span>(HAN)</span></p>
+                          <p>Noi Bai International Airport</p>
+                        </div>
+                      </div>
+                      <div class="tcd__results-detail-info-middle">
+                        <p>1h 0m</p>
+                      </div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>13:55</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Kuala Lumpur<span>(KUL)</span></p>
+                          <p>Kuala Lumpur International Airport</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tcd__results-detail-utils">
+                      <ul>
+                        <li>Hành lý xách tay (7kg)</li>
+                        <li>Miễn phí đồ ăn</li>
+                        <li>Màn hình giải trí tại chỗ</li>
+                        <li>Cổng sạc điện thoại</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__results-card type-2">
+                <div class="tcd__results-card-wrapper">
+                  <div class="tcd__results-brand"><img src="img/svg/OD.svg">
+                    <h4>Malindo Air</h4>
+                    <p>OD572</p>
+                  </div>
+                  <div class="tcd__results-info">
+                    <div class="tcd__results-column-info">
+                      <h2>11:40</h2>
+                      <p>Hanoi</p>
+                      <p>(HAN)</p>
+                    </div>
+                    <div class="tcd__results-info-center"><span>3h 15m</span><img src="img/svg/airplane.svg"><span>nonstop</span></div>
+                    <div class="tcd__results-column-info">
+                      <h2>13:55</h2>
+                      <p>Kuala Lumpur</p>
+                      <p>(KUL)</p>
+                    </div>
+                  </div>
+                  <div class="tcd__results-price">
+                    <h3>4,500,000đ<span>/người</span></h3>
+                    <p><span class="icon-checked"></span><span>giá đã bao gồm thuế và phí</span></p>
+                    <div class="tcd__results-btns"><a href="#">Chi tiết</a>
+                      <button class="btn btn-primary" type="button">Chọn</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcd__results-detail">
+                  <div class="tcd__results-detail-card">
+                    <div class="tcd__results-detail-brand"><img src="img/svg/OD.svg">
+                      <h4>Malindo Air</h4>
+                      <p>Thương gia - OD572</p>
+                    </div>
+                    <div class="tcd__results-detail-info">
+                      <div class="tcd__results-detail-vertical-line"><span></span></div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>11:40</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Hanoi<span>(HAN)</span></p>
+                          <p>Noi Bai International Airport</p>
+                        </div>
+                      </div>
+                      <div class="tcd__results-detail-info-middle">
+                        <p>1h 0m</p>
+                      </div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>13:55</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Kuala Lumpur<span>(KUL)</span></p>
+                          <p>Kuala Lumpur International Airport</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tcd__results-detail-utils">
+                      <ul>
+                        <li>Hành lý xách tay (7kg)</li>
+                        <li>Miễn phí đồ ăn</li>
+                        <li>Màn hình giải trí tại chỗ</li>
+                        <li>Cổng sạc điện thoại</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tcd__results-detail-stopover">
+                    <p>Nối chuyến tại: <strong>Ho Chi Minh</strong><span> - Thời gian chờ: </span><strong>1h 10m</strong></p>
+                  </div>
+                  <div class="tcd__results-detail-card">
+                    <div class="tcd__results-detail-brand"><img src="img/svg/OD.svg">
+                      <h4>Malindo Air</h4>
+                      <p>Thương gia - OD572</p>
+                    </div>
+                    <div class="tcd__results-detail-info">
+                      <div class="tcd__results-detail-vertical-line"><span></span></div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>11:40</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Hanoi<span>(HAN)</span></p>
+                          <p>Noi Bai International Airport</p>
+                        </div>
+                      </div>
+                      <div class="tcd__results-detail-info-middle">
+                        <p>1h 0m</p>
+                      </div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>13:55</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Kuala Lumpur<span>(KUL)</span></p>
+                          <p>Kuala Lumpur International Airport</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tcd__results-detail-utils">
+                      <ul>
+                        <li>Hành lý xách tay (7kg)</li>
+                        <li>Miễn phí đồ ăn</li>
+                        <li>Màn hình giải trí tại chỗ</li>
+                        <li>Cổng sạc điện thoại</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__results-card type-2">
+                <div class="tcd__results-card-wrapper">
+                  <div class="tcd__results-brand"><img src="img/svg/VJ.svg">
+                    <h4>Vietjet Air</h4>
+                    <p>VJ915</p>
+                  </div>
+                  <div class="tcd__results-info">
+                    <div class="tcd__results-column-info">
+                      <h2>11:40</h2>
+                      <p>Hanoi</p>
+                      <p>(HAN)</p>
+                    </div>
+                    <div class="tcd__results-info-center"><span>3h 15m</span><img src="img/svg/airplane.svg"><span>nonstop</span></div>
+                    <div class="tcd__results-column-info">
+                      <h2>13:55</h2>
+                      <p>Kuala Lumpur</p>
+                      <p>(KUL)</p>
+                    </div>
+                  </div>
+                  <div class="tcd__results-price">
+                    <h3>4,500,000đ<span>/người</span></h3>
+                    <p><span class="icon-checked"></span><span>giá đã bao gồm thuế và phí</span></p>
+                    <div class="tcd__results-btns"><a href="#">Chi tiết</a>
+                      <button class="btn btn-primary" type="button">Chọn</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcd__results-detail">
+                  <div class="tcd__results-detail-card">
+                    <div class="tcd__results-detail-brand"><img src="img/svg/VJ.svg">
+                      <h4>Vietjet Air</h4>
+                      <p>Phổ thông - VJ915</p>
+                    </div>
+                    <div class="tcd__results-detail-info">
+                      <div class="tcd__results-detail-vertical-line"><span></span></div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>11:40</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Hanoi<span>(HAN)</span></p>
+                          <p>Noi Bai International Airport</p>
+                        </div>
+                      </div>
+                      <div class="tcd__results-detail-info-middle">
+                        <p>1h 0m</p>
+                      </div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>13:55</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Kuala Lumpur<span>(KUL)</span></p>
+                          <p>Kuala Lumpur International Airport</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tcd__results-detail-utils">
+                      <ul>
+                        <li>Hành lý xách tay (7kg)</li>
+                        <li>Miễn phí đồ ăn</li>
+                        <li>Màn hình giải trí tại chỗ</li>
+                        <li>Cổng sạc điện thoại</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tcd__results-detail-stopover">
+                    <p>Nối chuyến tại: <strong>Ho Chi Minh</strong><span> - Thời gian chờ: </span><strong>1h 10m</strong></p>
+                  </div>
+                  <div class="tcd__results-detail-card">
+                    <div class="tcd__results-detail-brand"><img src="img/svg/VJ.svg">
+                      <h4>Vietjet Air</h4>
+                      <p>Phổ thông - VJ915</p>
+                    </div>
+                    <div class="tcd__results-detail-info">
+                      <div class="tcd__results-detail-vertical-line"><span></span></div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>11:40</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Hanoi<span>(HAN)</span></p>
+                          <p>Noi Bai International Airport</p>
+                        </div>
+                      </div>
+                      <div class="tcd__results-detail-info-middle">
+                        <p>1h 0m</p>
+                      </div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>13:55</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Kuala Lumpur<span>(KUL)</span></p>
+                          <p>Kuala Lumpur International Airport</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tcd__results-detail-utils">
+                      <ul>
+                        <li>Hành lý xách tay (7kg)</li>
+                        <li>Miễn phí đồ ăn</li>
+                        <li>Màn hình giải trí tại chỗ</li>
+                        <li>Cổng sạc điện thoại</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__results-card type-2 active">
+                <div class="tcd__results-card-wrapper">
+                  <div class="tcd__results-brand"><img src="img/svg/VN.svg">
+                    <h4>Vietnam Airlines</h4>
+                    <p>VN340</p>
+                  </div>
+                  <div class="tcd__results-info">
+                    <div class="tcd__results-column-info">
+                      <h2>11:40</h2>
+                      <p>Hanoi</p>
+                      <p>(HAN)</p>
+                    </div>
+                    <div class="tcd__results-info-center"><span>3h 15m</span><img src="img/svg/airplane.svg"><span>nonstop</span></div>
+                    <div class="tcd__results-column-info">
+                      <h2>13:55</h2>
+                      <p>Kuala Lumpur</p>
+                      <p>(KUL)</p>
+                    </div>
+                  </div>
+                  <div class="tcd__results-price">
+                    <h3>4,500,000đ<span>/người</span></h3>
+                    <p><span class="icon-checked"></span><span>giá đã bao gồm thuế và phí</span></p>
+                    <div class="tcd__results-btns"><a href="#">Chi tiết</a>
+                      <button class="btn btn-primary" type="button">Chọn</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcd__results-detail active">
+                  <div class="tcd__results-detail-card">
+                    <div class="tcd__results-detail-brand"><img src="img/svg/VN.svg">
+                      <h4>Vietnam Airlines</h4>
+                      <p>Thương gia - VN340</p>
+                    </div>
+                    <div class="tcd__results-detail-info">
+                      <div class="tcd__results-detail-vertical-line"><span></span></div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>11:40</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Hanoi<span>(HAN)</span></p>
+                          <p>Noi Bai International Airport</p>
+                        </div>
+                      </div>
+                      <div class="tcd__results-detail-info-middle">
+                        <p>1h 0m</p>
+                      </div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>13:55</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Kuala Lumpur<span>(KUL)</span></p>
+                          <p>Kuala Lumpur International Airport</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tcd__results-detail-utils">
+                      <ul>
+                        <li>Hành lý xách tay (7kg)</li>
+                        <li>Miễn phí đồ ăn</li>
+                        <li>Màn hình giải trí tại chỗ</li>
+                        <li>Cổng sạc điện thoại</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tcd__results-detail-stopover">
+                    <p>Nối chuyến tại: <strong>Ho Chi Minh</strong><span> - Thời gian chờ: </span><strong>1h 10m</strong></p>
+                  </div>
+                  <div class="tcd__results-detail-card">
+                    <div class="tcd__results-detail-brand"><img src="img/svg/VN.svg">
+                      <h4>Vietnam Airlines</h4>
+                      <p>Thương gia - VN340</p>
+                    </div>
+                    <div class="tcd__results-detail-info">
+                      <div class="tcd__results-detail-vertical-line"><span></span></div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>11:40</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Hanoi<span>(HAN)</span></p>
+                          <p>Noi Bai International Airport</p>
+                        </div>
+                      </div>
+                      <div class="tcd__results-detail-info-middle">
+                        <p>1h 0m</p>
+                      </div>
+                      <div class="tcd__results-detail-sub-info">
+                        <div class="tcd__results-detail-info-left">
+                          <h4>13:55</h4>
+                          <p>22 Th06 2018</p>
+                        </div>
+                        <div class="tcd__results-detail-info-right">
+                          <p>Kuala Lumpur<span>(KUL)</span></p>
+                          <p>Kuala Lumpur International Airport</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tcd__results-detail-utils">
+                      <ul>
+                        <li>Hành lý xách tay (7kg)</li>
+                        <li>Miễn phí đồ ăn</li>
+                        <li>Màn hình giải trí tại chỗ</li>
+                        <li>Cổng sạc điện thoại</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__pagination">
+                <ul>
+                  <li class="tcd__pagination-prev-all"><a href="#"><span class="icon-right-thin-chevron"></span><span class="icon-right-thin-chevron"></span></a></li>
+                  <li class="tcd__pagination-prev"><a href="#"><span class="icon-right-thin-chevron"></span></a></li>
+                  <li class="active"><a href="#"><span>1</span></a></li>
+                  <li><a href="#"><span>2</span></a></li>
+                  <li><a href="#"><span>3</span></a></li>
+                  <li><a href="#"><span>4</span></a></li>
+                  <li class="tcd__pagination-next"><a href="#"><span class="icon-right-thin-chevron"></span></a></li>
+                  <li class="tcd__pagination-next-all"><a href="#"><span class="icon-right-thin-chevron"></span><span class="icon-right-thin-chevron"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tcd__footer">
+      <div class="tcd__footer-row">
+        <div class="container">
+          <div class="row">
+            <div class="tcd__footer-column col-12 col-lg-6 col-xl-3">
+              <div class="tcd__footer-info"><a class="tcd__footer-logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+                <p class="tcd__footer-description">TaChuDu cung cấp giải pháp đặt vé máy bay, đặt tour chất lượng cao, đảm bảo uy tín 100%. Rất nhiều đánh giá tích cực từ khách hàng về chúng tôi. Chúng tôi ngày càng nỗ lực và cố gắng để đưa đến cho khách hàng nhiều lựa chọn tốt nhất.</p>
+                <ul class="tcd__footer-socials">
+                  <li><a href="#"><span class="icon-facebook"></span></a></li>
+                  <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                  <li><a href="#"><span class="icon-google-plus"></span></a></li>
+                  <li><a href="#"><span class="icon-instagram"></span></a></li>
+                  <li><a href="#"><span class="icon-twitter"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tcd__footer-column col-12 col-lg-6 col-xl-3">
+              <div class="tcd__footer-hotel-list tcd__hotel-list">
+                <h4 class="tcd__footer-header">Khách sạn phổ biến</h4>
+                <div class="tcd__hotel-item">
+                  <div class="tcd__hotel-thumbnail" style="background-image:url(img/banner.jpg)"></div>
+                  <div class="tcd__hotel-content">
+                    <h3 class="tcd__hotel-title"><a href="#">Grand Hotel</a></h3>
+                    <div class="tcd__hotel-stars"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star">
+                    </div>
+                    <div class="tcd__hotel-price"><span>chỉ từ</span><strong>450,000đ</strong></div>
+                    <div class="tcd__hotel-address"><span class="icon-maps-and-flags"></span><span>Hoàn Kiếm, Hà Nội</span></div>
+                  </div>
+                </div>
+                <div class="tcd__hotel-item">
+                  <div class="tcd__hotel-thumbnail" style="background-image:url(img/banner.jpg)"></div>
+                  <div class="tcd__hotel-content">
+                    <h3 class="tcd__hotel-title"><a href="#">Grand Hotel</a></h3>
+                    <div class="tcd__hotel-stars"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star">
+                    </div>
+                    <div class="tcd__hotel-price"><span>chỉ từ</span><strong>450,000đ</strong></div>
+                    <div class="tcd__hotel-address"><span class="icon-maps-and-flags"></span><span>Hoàn Kiếm, Hà Nội</span></div>
+                  </div>
+                </div>
+                <div class="tcd__hotel-item">
+                  <div class="tcd__hotel-thumbnail" style="background-image:url(img/banner.jpg)"></div>
+                  <div class="tcd__hotel-content">
+                    <h3 class="tcd__hotel-title"><a href="#">Grand Hotel</a></h3>
+                    <div class="tcd__hotel-stars"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star">
+                    </div>
+                    <div class="tcd__hotel-price"><span>chỉ từ</span><strong>450,000đ</strong></div>
+                    <div class="tcd__hotel-address"><span class="icon-maps-and-flags"></span><span>Hoàn Kiếm, Hà Nội</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tcd__footer-column col-12 col-lg-6 col-xl-3">
+              <div class="tcd__footer-tags">
+                <h4 class="tcd__footer-header">Thẻ</h4>
+                <div class="tcd__footer-tags-wrapper"><a class="tcd__footer-tag" href="#">Hà Nội</a><a class="tcd__footer-tag" href="#">Hoàn Kiếm</a><a class="tcd__footer-tag" href="#">Đà Nẵng</a><a class="tcd__footer-tag" href="#">Đà Lạt</a><a class="tcd__footer-tag" href="#">Vịnh Hạ Long</a><a class="tcd__footer-tag" href="#">Cát Bà</a><a class="tcd__footer-tag" href="#">Sài Gòn</a><a class="tcd__footer-tag" href="#">Mũi Né</a>
+                </div>
+              </div>
+            </div>
+            <div class="tcd__footer-column col-12 col-lg-6 col-xl-3">
+              <div class="tcd__footer-company-info">
+                <h4 class="tcd__footer-header">Liên hệ</h4>
+                <ul class="tcd__footer-company-info-list">
+                  <li class="tcd__footer-company-info-item"><span class="icon-placeholder2"></span><span>tầng 5, tòa nhà Victoria, Nguyễn Chánh, Trung Hòa, Cầu Giấy, Hà Nội</span></li>
+                  <li class="tcd__footer-company-info-item"><span class="icon-old-typical-phone"></span><span>+8493 725 0110</span></li>
+                  <li class="tcd__footer-company-info-item"><span class="icon-mail-black-envelope-symbol"></span><span>admin@tachudu.com</span></li>
+                  <li class="tcd__footer-company-info-item"><span class="icon-internet"></span><span>www.tachudu.com</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tcd__footer-row tcd__footer-row-darker">
+        <div class="container">
+          <div class="row">
+            <div class="tcd__footer-copyright col-12 col-md-6">
+              <p>Bản quyền thuộc về TaChuDu © 2018.</p>
+              <p>Bản quyền thiết kế của TaChuDu</p>
+            </div>
+            <div class="tcd__footer-navigation col-12 col-md-6">
+              <ul>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBccCirP3qSlRkJi21oAUgQOQckpT5xFVg"></script><!--<script src="js/loading.min.js"></script>-->
+<!--End JavaScript Top -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<noscript><link rel="stylesheet" href="css/styles.css"/></noscript>
+<![endif]-->
+    <script src="js/utils.min.js"></script>
+    <script src="js/index.min.js"></script>
+    <script src="js/tour.min.js"></script>
+    <script src="js/flight.min.js"></script>
+    <script src="js/customs.min.js"></script>
+  </body>
+</html>
