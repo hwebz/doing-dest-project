@@ -9271,6 +9271,7 @@ h5 {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
+      text-align: left;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -9302,7 +9303,7 @@ h5 {
       .tcd__advs .tcd__advs-wrapper .tcd__advs-block .tcd__advs-separator {
         font-size: 20px;
         display: none; }
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
           .tcd__advs .tcd__advs-wrapper .tcd__advs-block .tcd__advs-separator {
             display: inline-block; } }
       @media (min-width: 768px) {
@@ -9312,11 +9313,21 @@ h5 {
                   justify-content: space-between; } }
       @media (min-width: 768px) {
         .tcd__advs .tcd__advs-wrapper .tcd__advs-block {
-          -ms-flex-pack: distribute;
-              justify-content: space-around; } }
-      @media (min-width: 1230px) {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          text-align: center; } }
+      @media (min-width: 992px) {
         .tcd__advs .tcd__advs-wrapper .tcd__advs-block {
-          padding-left: 0; } }
+          padding-left: 0;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          text-align: left; } }
     @media (min-width: 768px) {
       .tcd__advs .tcd__advs-wrapper {
         -webkit-box-orient: horizontal;
@@ -9386,16 +9397,16 @@ h5 {
                 justify-content: space-between;
         margin: 0; }
         .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-activity h4 a[class^='icon-'] {
-          -webkit-transform: rotateZ(-90deg);
-          -khtml-transform: rotateZ(-90deg);
-          transform: rotateZ(-90deg);
+          -webkit-transform: rotateZ(90deg);
+          -khtml-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
           color: #231f20;
           -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out; }
           .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-activity h4 a[class^='icon-'].expanded {
-            -webkit-transform: rotateZ(90deg);
-            -khtml-transform: rotateZ(90deg);
-            transform: rotateZ(90deg); }
+            -webkit-transform: rotateZ(-90deg);
+            -khtml-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg); }
       .tcd__tour-filters .tcd__tour-filters-block .tcd__tour-filters-content .tcd__tour-filters-activity .tcd__tour-filters-sub-activities {
         margin-left: 20px;
         padding-top: 10px; }
@@ -9731,6 +9742,75 @@ select {
     .tcd__tour-results .tcd__tour-results-list .tcd__tour-results-card {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
+
+.tcd__pagination {
+  padding-top: 15px; }
+  .tcd__pagination ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .tcd__pagination ul li {
+      margin: 0 2px; }
+      .tcd__pagination ul li a {
+        display: inline-block;
+        border: 1px solid #f7941d;
+        border-radius: 5px;
+        color: #231f20;
+        width: 30px;
+        height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-size: 12px; }
+        .tcd__pagination ul li a span[class^='icon-'] {
+          display: inline-block;
+          font-size: 12px;
+          width: 5px;
+          -webkit-transform: translate(-3px, 0);
+          -khtml-transform: translate(-3px, 0);
+          transform: translate(-3px, 0); }
+        @media (min-width: 576px) {
+          .tcd__pagination ul li a {
+            width: 40px;
+            height: 40px;
+            font-size: 16px; } }
+      .tcd__pagination ul li.active a, .tcd__pagination ul li:hover a {
+        background-color: #f7941d;
+        color: #fff; }
+      .tcd__pagination ul li.tcd__pagination-prev-all, .tcd__pagination ul li.tcd__pagination-prev {
+        -webkit-transform: rotateY(180deg);
+        -khtml-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
+      .tcd__pagination ul li.tcd__pagination-prev {
+        margin-right: 10px; }
+        @media (min-width: 576px) {
+          .tcd__pagination ul li.tcd__pagination-prev {
+            margin-right: 15px; } }
+      .tcd__pagination ul li.tcd__pagination-next {
+        margin-right: 10px; }
+        @media (min-width: 576px) {
+          .tcd__pagination ul li.tcd__pagination-next {
+            margin-right: 15px; } }
 
 /********************
        VENDORS
