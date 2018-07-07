@@ -27,7 +27,8 @@
     <script src="js/modernizr-cus.js"></script>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script><![endif]-->
-    <script src="js/vendors.min.js"></script><!--<script src="js/loading.min.js"></script>-->
+    <script src="js/vendors.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBccCirP3qSlRkJi21oAUgQOQckpT5xFVg"></script><!--<script src="js/loading.min.js"></script>-->
 <!--End JavaScript Top -->
 <!--[if (gte IE 6)&(lte IE 8)]>
 <script type="text/javascript" src="js/selectivizr-min.js"></script>
@@ -379,7 +380,7 @@
               <div class="tcd__tour-results-card">
                 <div class="tcd__tour-results-card-thumbnail">
                   <div class="tcd__tour-results-card-thumb" style="background-image: url(img/slide-2.jpg)"></div>
-                  <div class="tcd__tour-results-card-map" style="background-image: url(img/map.jpg)"></div>
+                  <div class="tcd__tour-results-card-map" id="small-map-tour-0" data-toggle="modal" data-target="#map-tour"></div>
                 </div>
                 <div class="tcd__tour-results-card-info">
                   <h3 class="tcd__tour-results-card-title">Tham quan Cầu Ngọc Sơn, Tam Đảo, Cát Bà, Hạ Long</h3>
@@ -433,7 +434,7 @@
               <div class="tcd__tour-results-card">
                 <div class="tcd__tour-results-card-thumbnail">
                   <div class="tcd__tour-results-card-thumb" style="background-image: url(img/slide-2.jpg)"></div>
-                  <div class="tcd__tour-results-card-map" style="background-image: url(img/map.jpg)"></div>
+                  <div class="tcd__tour-results-card-map" id="small-map-tour-1" data-toggle="modal" data-target="#map-tour"></div>
                 </div>
                 <div class="tcd__tour-results-card-info">
                   <h3 class="tcd__tour-results-card-title">Tham quan Cầu Ngọc Sơn, Tam Đảo, Cát Bà, Hạ Long</h3>
@@ -487,7 +488,7 @@
               <div class="tcd__tour-results-card">
                 <div class="tcd__tour-results-card-thumbnail">
                   <div class="tcd__tour-results-card-thumb" style="background-image: url(img/slide-2.jpg)"></div>
-                  <div class="tcd__tour-results-card-map" style="background-image: url(img/map.jpg)"></div>
+                  <div class="tcd__tour-results-card-map" id="small-map-tour-2" data-toggle="modal" data-target="#map-tour"></div>
                 </div>
                 <div class="tcd__tour-results-card-info">
                   <h3 class="tcd__tour-results-card-title">Tham quan Cầu Ngọc Sơn, Tam Đảo, Cát Bà, Hạ Long</h3>
@@ -541,7 +542,7 @@
               <div class="tcd__tour-results-card">
                 <div class="tcd__tour-results-card-thumbnail">
                   <div class="tcd__tour-results-card-thumb" style="background-image: url(img/slide-2.jpg)"></div>
-                  <div class="tcd__tour-results-card-map" style="background-image: url(img/map.jpg)"></div>
+                  <div class="tcd__tour-results-card-map" id="small-map-tour-3" data-toggle="modal" data-target="#map-tour"></div>
                 </div>
                 <div class="tcd__tour-results-card-info">
                   <h3 class="tcd__tour-results-card-title">Tham quan Cầu Ngọc Sơn, Tam Đảo, Cát Bà, Hạ Long</h3>
@@ -595,7 +596,7 @@
               <div class="tcd__tour-results-card">
                 <div class="tcd__tour-results-card-thumbnail">
                   <div class="tcd__tour-results-card-thumb" style="background-image: url(img/slide-2.jpg)"></div>
-                  <div class="tcd__tour-results-card-map" style="background-image: url(img/map.jpg)"></div>
+                  <div class="tcd__tour-results-card-map" id="small-map-tour-4" data-toggle="modal" data-target="#map-tour"></div>
                 </div>
                 <div class="tcd__tour-results-card-info">
                   <h3 class="tcd__tour-results-card-title">Tham quan Cầu Ngọc Sơn, Tam Đảo, Cát Bà, Hạ Long</h3>
@@ -657,6 +658,23 @@
                   <li class="tcd__pagination-next"><a href="#"><span class="icon-right-thin-chevron"></span></a></li>
                   <li class="tcd__pagination-next-all"><a href="#"><span class="icon-right-thin-chevron"></span><span class="icon-right-thin-chevron"></span></a></li>
                 </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tcd__modal tcd__map-modal modal fade" id="map-tour">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Tham quan Cầu Ngọc Sơn, Tam Đảo, Cát Bà, Hạ Long</h4>
+                  <button type="button" data-dismiss="modal"><span class="icon-cancel-music"></span></button>
+                </div>
+                <div class="modal-body">
+                  <div id="map-tour-map"></div>
+                </div>
+                <div class="modal-footer">
+                  <p>5 Ngày 4 Đêm - <strong>4,500,000đ</strong></p>
+                  <button class="btn btn-primary" type="button" data-dismiss="modal">Chi tiết</button>
+                </div>
               </div>
             </div>
           </div>
@@ -754,7 +772,8 @@
         </div>
       </div>
     </div>
-    <script src="js/vendors.min.js"></script><!--<script src="js/loading.min.js"></script>-->
+    <script src="js/vendors.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBccCirP3qSlRkJi21oAUgQOQckpT5xFVg"></script><!--<script src="js/loading.min.js"></script>-->
 <!--End JavaScript Top -->
 <!--[if (gte IE 6)&(lte IE 8)]>
 <script type="text/javascript" src="js/selectivizr-min.js"></script>
