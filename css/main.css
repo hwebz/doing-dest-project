@@ -7819,7 +7819,8 @@ a.text-dark:hover, a.text-dark:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 50px !important; }
+  height: 50px !important;
+  margin-top: 35px; }
 
 .irs-line {
   position: relative;
@@ -7888,7 +7889,7 @@ a.text-dark:hover, a.text-dark:focus {
 .irs-from, .irs-to, .irs-single {
   position: absolute;
   display: block;
-  bottom: -15px;
+  top: -15px;
   left: 0;
   cursor: default;
   white-space: nowrap; }
@@ -8041,15 +8042,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .irs-from, .irs-to, .irs-single {
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.333;
   text-shadow: none;
   padding: 1px 5px;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 3px; }
-
-.irs-from, .irs-to, .irs-single {
-  display: none; }
 
 .lt-ie9 .irs-from, .lt-ie9 .irs-to, .lt-ie9 .irs-single {
   background: #999; }
@@ -8470,10 +8468,10 @@ h5 {
             display: inline-block; } }
     .tcd__header .tcd__header-content .tcd__header-navigation {
       height: 100vh;
-      width: 100vw;
+      width: 50vw;
       background-color: #fff;
       left: auto;
-      right: -100vw;
+      right: -50vw;
       -webkit-transition: right 0.3s ease-in-out;
       transition: right 0.3s ease-in-out; }
       .tcd__header .tcd__header-content .tcd__header-navigation.active {
@@ -9203,12 +9201,12 @@ h5 {
     padding-top: 25px;
     margin: 0 -6px; }
   .tcd__tour-list .tcd__tour-list-slider .slick-arrow.slick-prev {
-    left: -20px; }
+    left: -5px; }
     @media (min-width: 576px) {
       .tcd__tour-list .tcd__tour-list-slider .slick-arrow.slick-prev {
         left: -40px; } }
   .tcd__tour-list .tcd__tour-list-slider .slick-arrow.slick-next {
-    right: -20px; }
+    right: -5px; }
     @media (min-width: 576px) {
       .tcd__tour-list .tcd__tour-list-slider .slick-arrow.slick-next {
         right: -40px; } }
@@ -9675,7 +9673,8 @@ select {
         width: 50%; } }
     @media (min-width: 768px) {
       .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-info {
-        width: auto; } }
+        width: auto;
+        max-width: calc(100% - 430px); } }
   .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-price-info {
     padding: 20px 15px;
     border-top: 1px solid #e4e4e4;
@@ -10164,7 +10163,7 @@ select {
         -ms-flex-direction: column;
             flex-direction: column; }
     .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper {
-      min-width: 70%; }
+      min-width: 85%; }
       .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-introduction {
         color: #231f20; }
         .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-introduction h3 {
@@ -10196,6 +10195,9 @@ select {
                 -ms-flex-positive: initial;
                     flex-grow: initial;
             margin-left: 7px; } }
+      @media (min-width: 992px) {
+        .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper {
+          min-width: 70%; } }
     .tcd__modify-search .tcd__search-form-tab-content .tcd__adv-slider {
       margin-top: 10px;
       -webkit-box-flex: 1;
@@ -10243,6 +10245,14 @@ select {
   @media (min-width: 576px) {
     .tcd__modify-search {
       padding: 50px 0; } }
+
+.tcd__adv-slider {
+  display: none; }
+  @media (min-width: 992px) {
+    .tcd__adv-slider {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .tcd__adv {
   background-image: linear-gradient(-60deg, #ffc485, #ff8171);
@@ -10712,6 +10722,9 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-twitter-1:before {
+  content: "\e91f"; }
+
 .icon-parking:before {
   content: "\e900"; }
 
@@ -10835,8 +10848,21 @@ select {
 .icon-double-king-size-bed:before {
   content: "\e931"; }
 
+.icon-facebook:before {
+  content: "\e932"; }
+
 .icon-flag:before {
   content: "\e934"; }
+
+.icon-google-plus .path1:before {
+  content: "\e935"; }
+
+.icon-google-plus .path2:before {
+  content: "\e936";
+  margin-left: -1em; }
+
+.icon-instagram:before {
+  content: "\e94d"; }
 
 .icon-internet:before {
   content: "\e94e"; }
@@ -10861,6 +10887,9 @@ select {
 
 .icon-old-typical-phone:before {
   content: "\e990"; }
+
+.icon-pinterest:before {
+  content: "\e9a5"; }
 
 .icon-placeholder:before {
   content: "\e9a7"; }
@@ -10888,6 +10917,9 @@ select {
 
 .icon-woman-avatar:before {
   content: "\e9c9"; }
+
+.icon-youtube:before {
+  content: "\e9ca"; }
 
 /*******************************
     CUSTOM CHANGES TO AIRLINES
