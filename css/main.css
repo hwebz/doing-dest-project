@@ -10701,7 +10701,6 @@ select {
       height: auto;
       width: auto;
       background-color: transparent;
-<<<<<<< HEAD
       position: relative;
       right: auto;
       padding-top: 0;
@@ -10716,11 +10715,6 @@ select {
     -webkit-transform: translate3d(0, 0, 0);
     -khtml-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-=======
-      position: inherit;
-      right: auto;
-      padding-top: 0; } }
->>>>>>> d871ce332817989697e08586679b1be25f529ddb
 
 .tcd__detail-inclusions,
 .tcd__detail-exclusions, .tcd__detail-cancellation, .tcd__detail-comments {
@@ -10837,12 +10831,8 @@ select {
         @media (min-width: 576px) {
           .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-left .tcd__detail-icon {
             top: 20px;
-<<<<<<< HEAD
             right: -13px;
             left: auto; } }
-=======
-            right: -13px; } }
->>>>>>> d871ce332817989697e08586679b1be25f529ddb
         .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-left .tcd__detail-icon:before {
           content: '';
           width: 10px;
@@ -10856,11 +10846,7 @@ select {
         .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-left .tcd__detail-icon.start, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-left .tcd__detail-icon.end {
           width: 25px;
           height: 25px;
-<<<<<<< HEAD
           right: -13px;
-=======
-          right: -12.5px;
->>>>>>> d871ce332817989697e08586679b1be25f529ddb
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
