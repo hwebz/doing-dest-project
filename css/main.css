@@ -8156,7 +8156,7 @@ h4 {
 h5 {
   font-size: 12px; }
 
-.tcd__filters, .tcd__price-summary, .tcd__booking-summary, .tcd__header .tcd__header-content .tcd__header-navigation {
+.tcd__header .tcd__header-content .tcd__header-navigation {
   position: fixed;
   top: 0;
   left: 0;
@@ -8254,6 +8254,11 @@ h5 {
     font-size: 10px; }
 
 .tcd__filters, .tcd__price-summary, .tcd__booking-summary {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   background-color: #fff;
   padding: 50px 0 20px 0;
   height: 100vh;
@@ -10702,75 +10707,77 @@ select {
         display: inline-block;
         margin: 0 5px; }
 
-@media (min-width: 992px) {
-  .tcd__price-summary {
-    padding: 0; } }
-
-.tcd__price-summary .tcd__price-info {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #fff;
-  border-top: 1px solid #e4e4e4; }
+.tcd__price-summary {
+  -webkit-transform: inerhit;
+  -khtml-transform: inerhit;
+  transform: inerhit; }
   @media (min-width: 992px) {
-    .tcd__price-summary .tcd__price-info {
-      margin-top: 25px;
-      -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-              box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-      border: none; } }
-  .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper {
-    padding: 20px 15px; }
-    .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-price {
-      text-align: center; }
-      .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-price h3 {
-        font-size: 25px; }
-      .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-price a {
-        font-size: 12px;
-        text-decoration: underline; }
-  .tcd__price-summary .tcd__price-info .tcd__price-info-btn {
+    .tcd__price-summary {
+      padding: 0; } }
+  .tcd__price-summary .tcd__price-info {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    border-top: 1px solid #e4e4e4; }
+    @media (min-width: 992px) {
+      .tcd__price-summary .tcd__price-info {
+        margin-top: 25px;
+        -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+        border: none; } }
+    .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper {
+      padding: 20px 15px; }
+      .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-price {
+        text-align: center; }
+        .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-price h3 {
+          font-size: 25px; }
+        .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-price a {
+          font-size: 12px;
+          text-decoration: underline; }
+    .tcd__price-summary .tcd__price-info .tcd__price-info-btn {
+      padding: 15px; }
+      .tcd__price-summary .tcd__price-info .tcd__price-info-btn .btn {
+        display: block; }
+  .tcd__price-summary .tcd__provider {
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    margin-top: 25px;
+    -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px; }
-    .tcd__price-summary .tcd__price-info .tcd__price-info-btn .btn {
-      display: block; }
-
-.tcd__price-summary .tcd__provider {
-  display: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
-  margin-top: 25px;
-  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 15px; }
-  .tcd__price-summary .tcd__provider .tcd__provider-logo {
-    width: 30%;
-    margin-right: 5px; }
-    .tcd__price-summary .tcd__provider .tcd__provider-logo img {
-      max-width: 100%; }
-  .tcd__price-summary .tcd__provider .tcd__provider-info {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1; }
-    .tcd__price-summary .tcd__provider .tcd__provider-info p {
-      margin-bottom: 0; }
-    .tcd__price-summary .tcd__provider .tcd__provider-info h2 {
-      margin-top: 0; }
-  @media (min-width: 992px) {
-    .tcd__price-summary .tcd__provider {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+    .tcd__price-summary .tcd__provider .tcd__provider-logo {
+      width: 30%;
+      margin-right: 5px; }
+      .tcd__price-summary .tcd__provider .tcd__provider-logo img {
+        max-width: 100%; }
+    .tcd__price-summary .tcd__provider .tcd__provider-info {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      .tcd__price-summary .tcd__provider .tcd__provider-info p {
+        margin-bottom: 0; }
+      .tcd__price-summary .tcd__provider .tcd__provider-info h2 {
+        margin-top: 0; }
+    @media (min-width: 992px) {
+      .tcd__price-summary .tcd__provider {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
 
 @media (min-width: 992px) {
   .sticky-sidebar {
@@ -11509,7 +11516,9 @@ select {
 .tcd__contact-details .tcd__contact-details-btn {
   background: #fff;
   padding: 15px;
-  text-align: right; }
+  text-align: right;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); }
 
 .tcd__booking-summary .tcd__booking-pane {
   background-color: #fff; }
