@@ -8166,7 +8166,7 @@ h5 {
   -khtml-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link:hover, .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-info .tcd__footer-socials li a:hover, .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-tags .tcd__footer-tags-wrapper .tcd__footer-tag:hover, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a:hover, .tcd__search-form-tab-content .tcd__search-form-flight-types li a:hover, .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title a:hover, .tcd__filters .tcd__filters-block .tcd__filters-content .tcd__filters-activity h4 a:hover[class^='icon-'], .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-thumbnail .tcd__results-card-map:hover, .tcd__breadcrum ul li a:hover, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-btn a:hover {
+.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link:hover, .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-info .tcd__footer-socials li a:hover, .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-tags .tcd__footer-tags-wrapper .tcd__footer-tag:hover, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a:hover, .tcd__search-form-tab-content .tcd__search-form-flight-types li a:hover, .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title a:hover, .tcd__filters .tcd__filters-block .tcd__filters-content .tcd__filters-activity h4 a:hover[class^='icon-'], .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-thumbnail .tcd__results-card-map:hover, .tcd__breadcrum ul li a:hover, .tcd__detail-cards .tcd__detail-card .tcd__detail-info:hover, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-btn a:hover {
   filter: alpha(opacity=80);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   -webkit-opacity: 0.8;
@@ -8206,7 +8206,7 @@ h5 {
   width: 100%;
   height: 100%; }
 
-.tcd__search-form-dropdown-results .tcd__search-form-dropdown-item, .tcd__filters .tcd__filters-block .tcd__filters-content .tcd__filters-condition p {
+.tcd__search-form-dropdown-results .tcd__search-form-dropdown-item, .tcd__filters .tcd__filters-block .tcd__filters-content .tcd__filters-condition p, .tcd__advs .tcd__advs-wrapper .tcd__advs-block h3 .text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -9209,7 +9209,8 @@ h5 {
       background-color: rgba(0, 0, 0, 0.5);
       color: #fff;
       padding: 40px 30px 15px 30px;
-      position: relative; }
+      position: relative;
+      min-height: 250px; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info .tcd__tour-list-price {
         position: absolute;
         top: -25px;
@@ -9224,7 +9225,7 @@ h5 {
           margin-left: 5px;
           font-size: 25px; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info h3 {
-        font-size: 35px; }
+        font-size: 25px; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info .tcd__tour-list-btn {
         text-align: center; }
     @media (min-width: 576px) {
@@ -9559,7 +9560,8 @@ h5 {
       height: auto;
       padding-top: 0;
       padding-bottom: 0;
-      left: auto; } }
+      left: auto;
+      z-index: 1; } }
 
 .tcd__checkbox {
   position: relative;
@@ -10240,7 +10242,7 @@ select {
         margin-left: 0; }
         @media (min-width: 768px) {
           .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-form .tcd__search-form-btn {
-            min-width: 20%;
+            min-width: 15%;
             -webkit-box-flex: initial;
                 -ms-flex-positive: initial;
                     flex-grow: initial;
@@ -10401,12 +10403,14 @@ select {
       padding-left: 15px; }
       .tcd__advs .tcd__advs-wrapper .tcd__advs-block h3 {
         font-size: 16px; }
-        .tcd__advs .tcd__advs-wrapper .tcd__advs-block h3 span {
+        .tcd__advs .tcd__advs-wrapper .tcd__advs-block h3 .price {
           font-size: 25px;
           margin-left: 5px; }
           @media (min-width: 768px) {
-            .tcd__advs .tcd__advs-wrapper .tcd__advs-block h3 span {
+            .tcd__advs .tcd__advs-wrapper .tcd__advs-block h3 .price {
               font-size: 41px; } }
+        .tcd__advs .tcd__advs-wrapper .tcd__advs-block h3 .text {
+          max-width: 80px; }
         .tcd__advs .tcd__advs-wrapper .tcd__advs-block h3 small {
           font-size: 16px; }
           @media (min-width: 768px) {
@@ -10697,9 +10701,20 @@ select {
       height: auto;
       width: auto;
       background-color: transparent;
-      position: inherit;
+      position: relative;
       right: auto;
-      padding-top: 0; } }
+      padding-top: 0;
+      -webkit-transform: inherit;
+      -khtml-transform: inherit;
+      transform: inherit; } }
+
+@media (min-width: 992px) {
+  .sticky-sidebar {
+    position: fixed;
+    top: 70px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -khtml-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
 
 .tcd__detail-inclusions,
 .tcd__detail-exclusions, .tcd__detail-cancellation, .tcd__detail-comments {
@@ -10737,7 +10752,8 @@ select {
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .tcd__detail-cards .tcd__detail-card:before {
     content: '';
     position: absolute;
@@ -10762,7 +10778,10 @@ select {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 30%;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
+    .tcd__detail-cards .tcd__detail-card .tcd__detail-info:hover {
+      outline: 5px solid #f7941d; }
     .tcd__detail-cards .tcd__detail-card .tcd__detail-info:before, .tcd__detail-cards .tcd__detail-card .tcd__detail-info:after {
       position: absolute;
       content: '';
@@ -10812,7 +10831,8 @@ select {
         @media (min-width: 576px) {
           .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-left .tcd__detail-icon {
             top: 20px;
-            right: -13px; } }
+            right: -13px;
+            left: auto; } }
         .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-left .tcd__detail-icon:before {
           content: '';
           width: 10px;
@@ -10826,7 +10846,7 @@ select {
         .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-left .tcd__detail-icon.start, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-left .tcd__detail-icon.end {
           width: 25px;
           height: 25px;
-          right: -12.5px;
+          right: -13px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
