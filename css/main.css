@@ -8647,26 +8647,37 @@ h5 {
   color: #f7941d; }
 
 #terms-summary .modal-dialog,
-#payment-guide-summary .modal-dialog {
+#payment-guide-summary .modal-dialog,
+#tour-detail-popup .modal-dialog {
   width: auto; }
   @media (min-width: 576px) {
     #terms-summary .modal-dialog,
-    #payment-guide-summary .modal-dialog {
+    #payment-guide-summary .modal-dialog,
+    #tour-detail-popup .modal-dialog {
       max-width: 100%; } }
   @media (min-width: 992px) {
     #terms-summary .modal-dialog,
-    #payment-guide-summary .modal-dialog {
+    #payment-guide-summary .modal-dialog,
+    #tour-detail-popup .modal-dialog {
       max-width: 850px; } }
-  #terms-summary .modal-dialog .modal-body p,
-  #payment-guide-summary .modal-dialog .modal-body p {
-    margin-bottom: 15px; }
-  #terms-summary .modal-dialog .modal-body ul,
-  #payment-guide-summary .modal-dialog .modal-body ul {
-    padding-left: 15px;
-    margin-bottom: 15px; }
-    #terms-summary .modal-dialog .modal-body ul li:before,
-    #payment-guide-summary .modal-dialog .modal-body ul li:before {
-      content: '- '; }
+
+#terms-summary .modal-body p,
+#payment-guide-summary .modal-body p {
+  margin-bottom: 15px; }
+
+#terms-summary .modal-body ul,
+#payment-guide-summary .modal-body ul {
+  padding-left: 15px;
+  margin-bottom: 15px; }
+  #terms-summary .modal-body ul li:before,
+  #payment-guide-summary .modal-body ul li:before {
+    content: '- '; }
+
+#tour-detail-popup .tcd__detail {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%; }
 
 /********************
        LAYOUT
