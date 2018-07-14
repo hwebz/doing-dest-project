@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="vi">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="mô tả">
+    <meta name="keywords" content="từ khóa">
+    <meta name="robots" content="noodp,index,follow">
+    <meta name="revisit-after' content='1 days">
+    <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <link rel="stylesheet" href="css/main.css"><!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0; url=detect.html"><script type="text/javascript">
+    <var>regExp = / <![CDATA[ /;</var>
+    <window class="top location">= 'detect.html';</window>
+    <var>regExp = / ]]> /;</var></script>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="js/modernizr-cus.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script><![endif]-->
+    <script src="js/vendors.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBccCirP3qSlRkJi21oAUgQOQckpT5xFVg"></script><!--<script src="js/loading.min.js"></script>-->
+<!--End JavaScript Top -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<noscript><link rel="stylesheet" href="css/styles.css"/></noscript>
+<![endif]-->
+  </head>
+  <body>
+    <div class="tcd__header">
+      <div class="container">
+        <div class="tcd__header-content navbar"><a class="tcd__header-logo navbar-brand" href="#"><img class="desktop" src="img/logo.png" alt="Logo"><img class="mobile" src="img/logo-mobile.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-target=".tcd__header-navigation" data-parent=".tcd__header"><span class="navbar-toggler-icon"></span></button>
+          <div class="tcd__header-navigation">
+            <button class="navbar-toggler" type="button" data-target=".tcd__header-navigation" data-parent=".tcd__header"><span class="icon-cancel-music"></span></button>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Tuyển dụng</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+              <li class="nav-item">
+                <button class="btn btn-primary small">Đăng ký</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary small">Đăng nhập</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tcd__small-banner type-2">
+      <div class="container">
+        <div class="tcd__small-banner-wrapper">
+          <h1>Thông tin hành khách</h1>
+        </div>
+      </div>
+    </div>
+    <div class="tcd__breadcrum">
+      <div class="container">
+        <ul>
+          <li><a href="#">Trang chủ<span>&gt;</span></a></li>
+          <li><a href="#">Tour ở Hà Nội<span>&gt;</span></a></li>
+          <li><a href="#">Tour truyền thống<span>&gt;</span></a></li>
+          <li><a href="#">Tour khám phá</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tcd__contact-detail-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="tcd__contact-details col-12 col-lg-9">
+            <div class="tcd__contact-details-contact">
+              <div class="tcd__contact-details-title">
+                <h2>Thông tin liên hệ
+                  <button class="navbar-toggler" type="button" data-target=".tcd__booking-summary" data-parent=".tcd__contact-detail-wrapper"><span class="navbar-toggler-icon black"></span></button>
+                </h2>
+                <p>Cung cấp thông tin liên hệ với nhà cung cấp để tiện liên lạc trong những trường hợp cần thiết.</p>
+              </div>
+              <div class="tcd__contact-details-form">
+                <div class="tcd__contact-details-field">
+                            <div class="form-group is-invalid">
+                              <label>Họ</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                            <div class="invalid-feedback">Vui lòng cung cấp thông tin</div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Đệm</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Tên</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Email</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Điện thoại</label>
+                              <input class="form-control" type="text" placeholder="" required value="+84">
+                            </div>
+                </div>
+              </div>
+              <div class="tcd__contact-details-btn">
+                <button class="btn btn-primary" type="button">Tiếp tục</button>
+              </div>
+            </div>
+            <div class="tcd__contact-details-passengers">
+              <div class="tcd__contact-details-title">
+                <h2>Thông tin hành khách
+                  <button class="navbar-toggler" type="button" data-target=".tcd__booking-summary"><span class="navbar-toggler-icon black"></span></button>
+                </h2>
+                <p>Cung cấp thông tin từng hành khách để làm thủ tục vé máy bay và quản lý hành khách</p>
+              </div>
+              <div class="tcd__contact-details-form">
+                <div class="tcd__contact-details-header">
+                  <h4><span>Hành khách #</span><span>1</span><span> - Người lớn</span></h4>
+                  <div class="tcd__contact-details-radios">
+                    <div class="tcd__radio">
+                      <input type="radio" name="passengerGender" value="male" id="passengerMale-1">
+                      <label for="passengerMale-1">Nam</label>
+                    </div>
+                    <div class="tcd__radio">
+                      <input type="radio" name="passengerGender" value="male" id="passengerFemale-1">
+                      <label for="passengerFemale-1">Nữ</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group is-invalid">
+                              <label>Họ</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                            <div class="invalid-feedback">Vui lòng cung cấp thông tin</div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Đệm</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Tên</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field single-daterange-picker">
+                            <div class="form-group">
+                              <label>Ngày sinh</label>
+                              <input class="form-control" type="text" placeholder="" required value="09 / 08 / 1986">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Quốc tịch</label>
+                              <select class="form-control" required>
+                                <option value="Việt Nam">Việt Nam</option>
+                                <option value="Thái Lan">Thái Lan</option>
+                                <option value="Campuchia">Campuchia</option>
+                                <option value="Lào">Lào</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Philippines">Philippines</option>
+                              </select>
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Hộ chiếu</label>
+                              <input class="form-control" type="text" placeholder="" required value="C4145676">
+                            </div>
+                </div>
+              </div>
+              <div class="tcd__contact-details-form">
+                <div class="tcd__contact-details-header">
+                  <h4><span>Hành khách #</span><span>2</span><span> - Người lớn</span></h4>
+                  <div class="tcd__contact-details-radios">
+                    <div class="tcd__radio">
+                      <input type="radio" name="passengerGender" value="male" id="passengerMale-2">
+                      <label for="passengerMale-2">Nam</label>
+                    </div>
+                    <div class="tcd__radio">
+                      <input type="radio" name="passengerGender" value="male" id="passengerFemale-2">
+                      <label for="passengerFemale-2">Nữ</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group is-invalid">
+                              <label>Họ</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                            <div class="invalid-feedback">Vui lòng cung cấp thông tin</div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Đệm</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Tên</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field single-daterange-picker">
+                            <div class="form-group">
+                              <label>Ngày sinh</label>
+                              <input class="form-control" type="text" placeholder="" required value="09 / 08 / 1986">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Quốc tịch</label>
+                              <select class="form-control" required>
+                                <option value="Việt Nam">Việt Nam</option>
+                                <option value="Thái Lan">Thái Lan</option>
+                                <option value="Campuchia">Campuchia</option>
+                                <option value="Lào">Lào</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Philippines">Philippines</option>
+                              </select>
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Hộ chiếu</label>
+                              <input class="form-control" type="text" placeholder="" required value="C4145676">
+                            </div>
+                </div>
+              </div>
+              <div class="tcd__contact-details-form">
+                <div class="tcd__contact-details-header">
+                  <h4><span>Hành khách #</span><span>3</span><span> - Người lớn</span></h4>
+                  <div class="tcd__contact-details-radios">
+                    <div class="tcd__radio">
+                      <input type="radio" name="passengerGender" value="male" id="passengerMale-3">
+                      <label for="passengerMale-3">Nam</label>
+                    </div>
+                    <div class="tcd__radio">
+                      <input type="radio" name="passengerGender" value="male" id="passengerFemale-3">
+                      <label for="passengerFemale-3">Nữ</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group is-invalid">
+                              <label>Họ</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                            <div class="invalid-feedback">Vui lòng cung cấp thông tin</div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Đệm</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Tên</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field single-daterange-picker">
+                            <div class="form-group">
+                              <label>Ngày sinh</label>
+                              <input class="form-control" type="text" placeholder="" required value="09 / 08 / 1986">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Quốc tịch</label>
+                              <select class="form-control" required>
+                                <option value="Việt Nam">Việt Nam</option>
+                                <option value="Thái Lan">Thái Lan</option>
+                                <option value="Campuchia">Campuchia</option>
+                                <option value="Lào">Lào</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Philippines">Philippines</option>
+                              </select>
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Hộ chiếu</label>
+                              <input class="form-control" type="text" placeholder="" required value="C4145676">
+                            </div>
+                </div>
+              </div>
+              <div class="tcd__contact-details-form">
+                <div class="tcd__contact-details-header">
+                  <h4><span>Hành khách #</span><span>4</span><span> - Người lớn</span></h4>
+                  <div class="tcd__contact-details-radios">
+                    <div class="tcd__radio">
+                      <input type="radio" name="passengerGender" value="male" id="passengerMale-4">
+                      <label for="passengerMale-4">Nam</label>
+                    </div>
+                    <div class="tcd__radio">
+                      <input type="radio" name="passengerGender" value="male" id="passengerFemale-4">
+                      <label for="passengerFemale-4">Nữ</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group is-invalid">
+                              <label>Họ</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                            <div class="invalid-feedback">Vui lòng cung cấp thông tin</div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Đệm</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Tên</label>
+                              <input class="form-control" type="text" placeholder="" required value="">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field single-daterange-picker">
+                            <div class="form-group">
+                              <label>Ngày sinh</label>
+                              <input class="form-control" type="text" placeholder="" required value="09 / 08 / 1986">
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Quốc tịch</label>
+                              <select class="form-control" required>
+                                <option value="Việt Nam">Việt Nam</option>
+                                <option value="Thái Lan">Thái Lan</option>
+                                <option value="Campuchia">Campuchia</option>
+                                <option value="Lào">Lào</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Philippines">Philippines</option>
+                              </select>
+                            </div>
+                </div>
+                <div class="tcd__contact-details-field">
+                            <div class="form-group">
+                              <label>Hộ chiếu</label>
+                              <input class="form-control" type="text" placeholder="" required value="C4145676">
+                            </div>
+                </div>
+              </div>
+              <div class="tcd__contact-details-btn">
+                <button class="btn btn-primary" type="button">Tiếp tục</button>
+              </div>
+            </div>
+          </div>
+          <div class="tcd__booking-summary col-12 col-lg-3">
+            <button class="navbar-toggler" type="button" data-target=".tcd__booking-summary" data-parent=".tcd__contact-detail-wrapper"><span class="icon-cancel-music"></span></button>
+            <div class="tcd__adv-slider initializing type-2">
+              <div class="tcd__adv">
+                <h4>Tham quan Vịnh Hạ Long và các điểm gần kề</h4>
+                <div class="tcd__adv-content">
+                  <div class="tcd__adv-discount">
+                    <p><span>-</span><span>45</span><span>%</span></p>
+                  </div>
+                  <div class="tcd__adv-info">
+                    <ul>
+                      <li>Đặt vé gia đình</li>
+                      <li>Trả tiền trước</li>
+                    </ul>
+                    <h3 class="tcd__adv-price">530000<span>đ</span><span>/người</span></h3>
+                    <button class="btn btn-primary small-light" type="button">Chi tiết</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__adv">
+                <h4>Tham quan Vịnh Hạ Long và các điểm gần kề</h4>
+                <div class="tcd__adv-content">
+                  <div class="tcd__adv-discount">
+                    <p><span>-</span><span>45</span><span>%</span></p>
+                  </div>
+                  <div class="tcd__adv-info">
+                    <ul>
+                      <li>Đặt vé gia đình</li>
+                      <li>Trả tiền trước</li>
+                    </ul>
+                    <h3 class="tcd__adv-price">530000<span>đ</span><span>/người</span></h3>
+                    <button class="btn btn-primary small-light" type="button">Chi tiết</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__adv">
+                <h4>Tham quan Vịnh Hạ Long và các điểm gần kề</h4>
+                <div class="tcd__adv-content">
+                  <div class="tcd__adv-discount">
+                    <p><span>-</span><span>45</span><span>%</span></p>
+                  </div>
+                  <div class="tcd__adv-info">
+                    <ul>
+                      <li>Đặt vé gia đình</li>
+                      <li>Trả tiền trước</li>
+                    </ul>
+                    <h3 class="tcd__adv-price">530000<span>đ</span><span>/người</span></h3>
+                    <button class="btn btn-primary small-light" type="button">Chi tiết</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__adv">
+                <h4>Tham quan Vịnh Hạ Long và các điểm gần kề</h4>
+                <div class="tcd__adv-content">
+                  <div class="tcd__adv-discount">
+                    <p><span>-</span><span>45</span><span>%</span></p>
+                  </div>
+                  <div class="tcd__adv-info">
+                    <ul>
+                      <li>Đặt vé gia đình</li>
+                      <li>Trả tiền trước</li>
+                    </ul>
+                    <h3 class="tcd__adv-price">530000<span>đ</span><span>/người</span></h3>
+                    <button class="btn btn-primary small-light" type="button">Chi tiết</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tcd__booking-pane">
+              <div class="tcd__booking-flight">
+                <h4>Chuyến bay</h4>
+                <div class="tcd__booking-flight-direction">
+                  <div class="tcd__booking-flight-info">
+                    <p>Chuyến bay đi</p>
+                    <div class="tcd__booking-flight-brand"><img src="img/svg/VN.svg">
+                      <p>VN340</p>
+                    </div>
+                    <div class="tcd__booking-flight-depart">
+                      <h2>HAN</h2>
+                      <p>11:30</p>
+                    </div>
+                    <div class="tcd__booking-flight-icon">
+                      <p>3h 50m</p><img src="img/svg/airplane.svg">
+                      <p>1 stop</p>
+                    </div>
+                    <div class="tcd__booking-flight-depart">
+                      <h2>SGN</h2>
+                      <p>16:20</p>
+                    </div><a class="toggle-collapse" href="#"><span class="icon-right-thin-chevron"></span></a>
+                  </div>
+                  <div class="tcd__booking-flight-detail">
+                    <ul>
+                      <li>Vietnam Airlines, VN340, Phổ thông</li>
+                      <li>Bay từ Hà Nội tới Thành phố Hồ Chí Minh</li>
+                      <li>Nối chuyến tại Đà Nẵng</li>
+                      <li>Hành lý xách tay 7kg</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tcd__booking-flight-direction">
+                  <div class="tcd__booking-flight-info">
+                    <p>Chuyến bay về</p>
+                    <div class="tcd__booking-flight-brand"><img src="img/svg/VN.svg">
+                      <p>VN340</p>
+                    </div>
+                    <div class="tcd__booking-flight-depart">
+                      <h2>HAN</h2>
+                      <p>11:30</p>
+                    </div>
+                    <div class="tcd__booking-flight-icon">
+                      <p>3h 50m</p><img src="img/svg/airplane.svg">
+                      <p>1 stop</p>
+                    </div>
+                    <div class="tcd__booking-flight-depart">
+                      <h2>SGN</h2>
+                      <p>16:20</p>
+                    </div><a class="toggle-collapse" href="#"><span class="icon-right-thin-chevron"></span></a>
+                  </div>
+                  <div class="tcd__booking-flight-detail">
+                    <ul>
+                      <li>Vietnam Airlines, VN340, Phổ thông</li>
+                      <li>Bay từ Hà Nội tới Thành phố Hồ Chí Minh</li>
+                      <li>Nối chuyến tại Đà Nẵng</li>
+                      <li>Hành lý xách tay 7kg</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tcd__booking-tour">
+                <div class="tcd__booking-tour-thumb" style="background-image:url(img/slide-2.jpg)"></div>
+                <div class="tcd__booking-tour-info">
+                  <h4>Tham quan Cầu Ngọc Sơn, Tam Đảo, Cát Bà, Hạ Long</h4>
+                  <p><span class="icon-double-king-size-bed"></span><span>6 ngày 5 đêm</span></p>
+                  <p><span class="icon-multiple-users-silhouette"></span><span>18 - 39</span></p><a href="#">Xem chi tiết...</a>
+                </div>
+              </div>
+              <div class="tcd__booking-price">
+                <h2>12,350,000đ</h2><a href="#price-summary" data-toggle="modal">Xem chi tiết giá và phí</a>
+                <div class="tcd__booking-price-included">
+                  <p><span class="icon-checked"></span><span>giá đã bao gồm thuế &amp; phí</span></p>
+                  <p><span class="icon-checked"></span><span>giá tốt nhất cho gia đình</span></p>
+                </div>
+              </div>
+              <div class="tcd__booking-sum">
+                <ul>
+                  <li><span class="label">Vé máy bay</span><strong class="price">7,800,000đ</strong><span class="sub">2 người lớn, 2 trẻ em</span>
+                  </li>
+                  <li><span class="label">Tour</span><strong class="price">4,500,000đ</strong>
+                  </li>
+                  <li><span class="label">Thuế &amp; Phí</span><strong class="price">750,000đ</strong>
+                  </li>
+                  <li><span class="label">Giảm giá</span><strong class="price yellow">-700,000</strong><span class="sub">TCD700</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="tcd__booking-promo">
+                <label>Mã giảm giá</label>
+                <div class="form-group is-invalid">
+                  <input class="form-control" type="text" value="TCD700">
+                  <button class="btn btn-primary small" type="button">Áp dụng</button>
+                </div>
+                <div class="invalid-feedback">Mã giảm giá không hợp lệ hoặc hết hạn</div>
+                <div class="tcd__checkbox">
+                  <input type="checkbox" id="promo-applied">
+                  <label for="promo-applied">Sử dụng <strong>450 TPoint</strong> cho lần thanh toán này</label>
+                </div>
+              </div>
+              <div class="tcd__booking-extra">
+                <ul>
+                  <li><span class="icon-checked"></span><span>Không phụ thu thẻ thanh toán quốc tế</span></li>
+                  <li><span class="icon-checked"></span><span>Đảm bảo giá luôn tốt nhất</span></li>
+                  <li><span class="icon-checked"></span><span>Nhận được 200 TPoint cho lần đặt sau</span></li>
+                </ul>
+              </div>
+              <div class="tcd__booking-terms"><a href="#terms-summary" data-toggle="modal">Điều khoản sử dụng</a><span>-</span><a href="#payment-guide-summary" data-toggle="modal">Hướng dẫn thanh toán</a></div>
+            </div>
+          </div>
+          <div class="tcd__modal tcd__map-modal modal fade" id="price-summary">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Chi tiết giá &amp; phí</h4>
+                  <button type="button" data-dismiss="modal"><span class="icon-cancel-music"></span></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Tour</h3>
+                  <div class="tcd__fee">
+                    <div class="tcd__fee-labels">
+                      <h4>Tour (x4 người)</h4>
+                      <h4>Thuế (10%)</h4>
+                      <h4>Phí phụ thu</h4>
+                    </div>
+                    <div class="tcd__fee-prices">
+                      <h4>6,000,00đ</h4>
+                      <h4>600,000đ</h4>
+                      <h4>300,000đ</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <h3>Tổng</h3>
+                  <h3>6,900,000đ</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tcd__modal tcd__map-modal modal fade" id="terms-summary">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Điều khoản sử dụng</h4>
+                  <button type="button" data-dismiss="modal"><span class="icon-cancel-music"></span></button>
+                </div>
+                <div class="modal-body">
+                  <div><p><strong>I. ĐIỀU KHOẢN CHUNG</strong></p><p>Giá tất cả các dịch vụ được tính theo tiền đồng (Việt Nam – VNĐ). Giá dịch vụ được liệt kê một cách rõ ràng trong phần “Bao gồm” trong các tour du lịch, dịch vụ xe, khách sạn,...TaChuDu không có nghĩa vụ thanh toán bất cứ chi phí nào không nằm trong phần “Bao gồm”</p><p><strong>II. THANH TOÁN</strong></p><p>Khi đăng ký, quý khách vui lòng cung cấp đầy đủ thông tin và đóng một khoản tiền cọc để giữ chỗ. Số tiền cọc khác nhau tùy theo chương trình mà quý khách tùy chọn, số tiền còn lại sẽ thanh toán trước ngày khởi hành là 5 ngày làm việc, có 2 hình thức thanh toán:</p><ul><li>Thanh toán bằng tiền mặt tại công ty.</li><li>Chuyển khoản qua ngân hàng.</li></ul><p>Việc thanh toán xem là hoàn tất khi Du Lịch Việt nhận được đủ tiền vé trước ngày khởi hành hoặc theo hợp đồng thỏa thuận giữa 2 bên. Bất kỳ việc thanh toán chậm trễ dẫn đến việc hủy dịch vụ không thuộc trách nhiệm của Du Lịch Việt.</p><p>Với hình thức thanh toán chuyển khoản: Khi thực hiện việc chuyển khoản, quý khách vui lòng ghi rõ họ tên, địa chỉ, điện thoại và nội dung chuyến du lịch cụ thể đã được quý khách chọn đăng ký.</p><p>Sau khi thực hiện việc chuyển khoản, quý khách vui lòng Fax Ủy Nhiệm Chi về công ty và liện hệ nhân viên phụ trách tuyến để nhận được vé du lịch chính thức từ công ty TaChuDu.</p><p>TaChuDu sẽ không giải quyết các trường hợp hệ thống tự động hủy phiếu đăng ký nếu quý khách không thực hiện đúng những quy định trên.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tcd__modal tcd__map-modal modal fade" id="payment-guide-summary">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Hướng dẫn thanh toán</h4>
+                  <button type="button" data-dismiss="modal"><span class="icon-cancel-music"></span></button>
+                </div>
+                <div class="modal-body">
+                  <div><p><strong>Thực hiện thanh toán theo các bước sau:</strong></p><p><ul><li>Nhập tên và số thẻ trên thẻ tín dụng của bạn</li><li>Điền hạn sử dụng trên thẻ</li><li>Điền mã CCV ở mặt sau</li><li>Nhấn nút 'Thanh Toán' để hoàn thành việc thanh toán</li></ul></p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tcd__footer">
+      <div class="tcd__footer-row">
+        <div class="container">
+          <div class="row">
+            <div class="tcd__footer-column col-12 col-lg-6 col-xl-3">
+              <div class="tcd__footer-info"><a class="tcd__footer-logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+                <p class="tcd__footer-description">TaChuDu cung cấp giải pháp đặt vé máy bay, đặt tour chất lượng cao, đảm bảo uy tín 100%. Rất nhiều đánh giá tích cực từ khách hàng về chúng tôi. Chúng tôi ngày càng nỗ lực và cố gắng để đưa đến cho khách hàng nhiều lựa chọn tốt nhất.</p>
+                <ul class="tcd__footer-socials">
+                  <li><a href="#"><span class="icon-facebook"></span></a></li>
+                  <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                  <li><a href="#"><span class="icon-google-plus"><span class="path1"></span><span class="path2"></span></span></a></li>
+                  <li><a href="#"><span class="icon-instagram"></span></a></li>
+                  <li><a href="#"><span class="icon-twitter-1"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tcd__footer-column col-12 col-lg-6 col-xl-3">
+              <div class="tcd__footer-hotel-list tcd__hotel-list">
+                <h4 class="tcd__footer-header">Khách sạn phổ biến</h4>
+                <div class="tcd__hotel-item">
+                  <div class="tcd__hotel-thumbnail" style="background-image:url(img/banner.jpg)"></div>
+                  <div class="tcd__hotel-content">
+                    <h3 class="tcd__hotel-title"><a href="#" data-toggle="tooltip" data-placement="top" title="Grand Hotel">Grand Hotel</a></h3>
+                    <div class="tcd__stars"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star">
+                    </div>
+                    <div class="tcd__hotel-price"><span>chỉ từ</span><strong>450,000đ</strong></div>
+                    <div class="tcd__hotel-address"><span class="icon-maps-and-flags"></span><span>Hoàn Kiếm, Hà Nội</span></div>
+                  </div>
+                </div>
+                <div class="tcd__hotel-item">
+                  <div class="tcd__hotel-thumbnail" style="background-image:url(img/banner.jpg)"></div>
+                  <div class="tcd__hotel-content">
+                    <h3 class="tcd__hotel-title"><a href="#" data-toggle="tooltip" data-placement="top" title="Grand Hotel">Grand Hotel</a></h3>
+                    <div class="tcd__stars"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star">
+                    </div>
+                    <div class="tcd__hotel-price"><span>chỉ từ</span><strong>450,000đ</strong></div>
+                    <div class="tcd__hotel-address"><span class="icon-maps-and-flags"></span><span>Hoàn Kiếm, Hà Nội</span></div>
+                  </div>
+                </div>
+                <div class="tcd__hotel-item">
+                  <div class="tcd__hotel-thumbnail" style="background-image:url(img/banner.jpg)"></div>
+                  <div class="tcd__hotel-content">
+                    <h3 class="tcd__hotel-title"><a href="#" data-toggle="tooltip" data-placement="top" title="Grand Hotel">Grand Hotel</a></h3>
+                    <div class="tcd__stars"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star"><img src="img/svg/star.svg" alt="Star">
+                    </div>
+                    <div class="tcd__hotel-price"><span>chỉ từ</span><strong>450,000đ</strong></div>
+                    <div class="tcd__hotel-address"><span class="icon-maps-and-flags"></span><span>Hoàn Kiếm, Hà Nội</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tcd__footer-column col-12 col-lg-6 col-xl-3">
+              <div class="tcd__footer-tags">
+                <h4 class="tcd__footer-header">Thẻ</h4>
+                <div class="tcd__footer-tags-wrapper"><a class="tcd__footer-tag" href="#">Hà Nội</a><a class="tcd__footer-tag" href="#">Hoàn Kiếm</a><a class="tcd__footer-tag" href="#">Đà Nẵng</a><a class="tcd__footer-tag" href="#">Đà Lạt</a><a class="tcd__footer-tag" href="#">Vịnh Hạ Long</a><a class="tcd__footer-tag" href="#">Cát Bà</a><a class="tcd__footer-tag" href="#">Sài Gòn</a><a class="tcd__footer-tag" href="#">Mũi Né</a>
+                </div>
+              </div>
+            </div>
+            <div class="tcd__footer-column col-12 col-lg-6 col-xl-3">
+              <div class="tcd__footer-company-info">
+                <h4 class="tcd__footer-header">Liên hệ</h4>
+                <ul class="tcd__footer-company-info-list">
+                  <li class="tcd__footer-company-info-item"><span class="icon-placeholder2"></span><span>tầng 5, tòa nhà Victoria, Nguyễn Chánh, Trung Hòa, Cầu Giấy, Hà Nội</span></li>
+                  <li class="tcd__footer-company-info-item"><span class="icon-old-typical-phone"></span><span>+8493 725 0110</span></li>
+                  <li class="tcd__footer-company-info-item"><span class="icon-mail-black-envelope-symbol"></span><span>admin@tachudu.com</span></li>
+                  <li class="tcd__footer-company-info-item"><span class="icon-internet"></span><span>www.tachudu.com</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tcd__footer-row tcd__footer-row-darker">
+        <div class="container">
+          <div class="row">
+            <div class="tcd__footer-copyright col-12 col-md-6">
+              <p>Bản quyền thuộc về TaChuDu © 2018.</p>
+              <p>Bản quyền thiết kế của TaChuDu</p>
+            </div>
+            <div class="tcd__footer-navigation col-12 col-md-6">
+              <ul>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBccCirP3qSlRkJi21oAUgQOQckpT5xFVg"></script><!--<script src="js/loading.min.js"></script>-->
+<!--End JavaScript Top -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<noscript><link rel="stylesheet" href="css/styles.css"/></noscript>
+<![endif]-->
+    <script src="js/utils.min.js"></script>
+    <script src="js/index.min.js"></script>
+    <script src="js/tour.min.js"></script>
+    <script src="js/flight.min.js"></script>
+    <script src="js/tour-detail.min.js"></script>
+    <script src="js/contact-details.min.js"></script>
+    <script src="js/customs.min.js"></script>
+  </body>
+</html>

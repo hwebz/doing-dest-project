@@ -39,9 +39,9 @@
     <div class="tcd__header">
       <div class="container">
         <div class="tcd__header-content navbar"><a class="tcd__header-logo navbar-brand" href="#"><img class="desktop" src="img/logo.png" alt="Logo"><img class="mobile" src="img/logo-mobile.png" alt="Logo"></a>
-          <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+          <button class="navbar-toggler" type="button" data-target=".tcd__header-navigation" data-parent=".tcd__header"><span class="navbar-toggler-icon"></span></button>
           <div class="tcd__header-navigation">
-            <button class="navbar-toggler" type="button"><span class="icon-cancel-music"></span></button>
+            <button class="navbar-toggler" type="button" data-target=".tcd__header-navigation" data-parent=".tcd__header"><span class="icon-cancel-music"></span></button>
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Tuyển dụng</a></li>
@@ -93,8 +93,8 @@
       <div class="container">
         <div class="row">
           <div class="tcd__detail col-12 col-lg-9">
-            <h2>Hành trình tour <span>tất cả các chi phí đã bao gồm</span>
-              <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon black"></span></button>
+            <h2>Hành trình tour
+              <button class="navbar-toggler" type="button" data-target=".tcd__price-summary" data-parent=".tcd__detail-wrapper"><span class="navbar-toggler-icon black"></span></button><span>tất cả các chi phí đã bao gồm</span>
             </h2>
             <div class="tcd__detail-reviews">
               <div class="tcd__reviews"><strong class="reviews-score excellent">4.2</strong>
@@ -1467,8 +1467,8 @@
           </div>
           <div class="tcd__price-summary col-12 col-lg-3">
             <div id="tcd__sticky-sidebar">
-              <button class="navbar-toggler" type="button"><span class="icon-cancel-music"></span></button>
-              <div class="tcd__adv-slider initializing">
+              <button class="navbar-toggler" type="button" data-target=".tcd__price-summary" data-parent=".tcd__detail-wrapper"><span class="icon-cancel-music"></span></button>
+              <div class="tcd__adv-slider initializing type-2">
                 <div class="tcd__adv">
                   <h4>Tham quan Vịnh Hạ Long và các điểm gần kề</h4>
                   <div class="tcd__adv-content">
@@ -1732,6 +1732,7 @@
     <script src="js/tour.min.js"></script>
     <script src="js/flight.min.js"></script>
     <script src="js/tour-detail.min.js"></script>
+    <script src="js/contact-details.min.js"></script>
     <script src="js/customs.min.js"></script>
   </body>
 </html>
