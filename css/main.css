@@ -8272,7 +8272,8 @@ h5 {
       padding-top: 0;
       padding-bottom: 0;
       left: auto;
-      z-index: 1; } }
+      z-index: 1;
+      overflow: inherit; } }
   .active.tcd__filters, .active.tcd__price-summary, .active.tcd__booking-summary {
     left: 0; }
 
@@ -9633,10 +9634,11 @@ h5 {
     background-size: 100%; } }
 
 .tcd__filters {
-  padding: 50px 10px 20px 10px; }
+  padding: 50px 15px 20px 15px; }
   @media (min-width: 992px) {
     .tcd__filters {
-      padding: 0; } }
+      padding-top: 0;
+      padding-bottom: 0; } }
   .tcd__filters .navbar-toggler {
     top: 15px;
     right: 15px; }
@@ -11725,6 +11727,18 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-briefcase:before {
+  content: "\e920"; }
+
+.icon-car-seat:before {
+  content: "\e921"; }
+
+.icon-case:before {
+  content: "\e922"; }
+
+.icon-plate-fork-and-knife:before {
+  content: "\e923"; }
+
 .icon-twitter-1:before {
   content: "\e91f"; }
 
@@ -11861,8 +11875,7 @@ select {
   content: "\e935"; }
 
 .icon-google-plus .path2:before {
-  content: "\e936";
-  margin-left: -1em; }
+  content: "\e936"; }
 
 .icon-instagram:before {
   content: "\e94d"; }
