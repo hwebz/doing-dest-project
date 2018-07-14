@@ -8156,6 +8156,14 @@ h4 {
 h5 {
   font-size: 12px; }
 
+.tcd__detail-inclusions,
+.tcd__detail-exclusions, .tcd__detail-cancellation, .tcd__detail-comments {
+  padding: 20px 0 0 0; }
+  @media (min-width: 576px) {
+    .tcd__detail-inclusions,
+    .tcd__detail-exclusions, .tcd__detail-cancellation, .tcd__detail-comments {
+      padding: 40px 0 0 0; } }
+
 .tcd__header .tcd__header-content .tcd__header-navigation {
   position: fixed;
   top: 0;
@@ -8179,10 +8187,10 @@ h5 {
 .form-group {
   border-radius: 5px; }
 
-.tcd__introduction, .tcd__popular-hotels, .tcd__results-wrapper, .tcd__detail-wrapper, .tcd__contact-detail-wrapper {
+.tcd__introduction, .tcd__popular-hotels, .tcd__results-wrapper, .tcd__detail-wrapper, .tcd__contact-detail-wrapper, .tcd__addons-wrapper {
   padding: 20px 0; }
   @media (min-width: 768px) {
-    .tcd__introduction, .tcd__popular-hotels, .tcd__results-wrapper, .tcd__detail-wrapper, .tcd__contact-detail-wrapper {
+    .tcd__introduction, .tcd__popular-hotels, .tcd__results-wrapper, .tcd__detail-wrapper, .tcd__contact-detail-wrapper, .tcd__addons-wrapper {
       padding: 40px 0; } }
 
 .tcd__tour-list .tcd__tour-list-title, .tcd__introduction .tcd__introduction-title, .tcd__popular-hotels .tcd__popular-hotels-title {
@@ -10792,14 +10800,6 @@ select {
   .tcd__adv-slider.type-2 .tcd__adv .tcd__adv-content .tcd__adv-info .tcd__adv-price span {
     font-size: 12px; }
 
-.tcd__detail-inclusions,
-.tcd__detail-exclusions, .tcd__detail-cancellation, .tcd__detail-comments {
-  padding: 20px 0 0 0; }
-  @media (min-width: 576px) {
-    .tcd__detail-inclusions,
-    .tcd__detail-exclusions, .tcd__detail-cancellation, .tcd__detail-comments {
-      padding: 40px 0 0 0; } }
-
 .tcd__detail h2 {
   position: relative; }
   .tcd__detail h2 > span {
@@ -11431,14 +11431,6 @@ select {
   .tcd__progress-bar.one:after {
     width: 1%; }
 
-.tcd__detail-inclusions,
-.tcd__detail-exclusions, .tcd__detail-cancellation, .tcd__detail-comments {
-  padding: 20px 0 0 0; }
-  @media (min-width: 576px) {
-    .tcd__detail-inclusions,
-    .tcd__detail-exclusions, .tcd__detail-cancellation, .tcd__detail-comments {
-      padding: 40px 0 0 0; } }
-
 .tcd__contact-detail-wrapper {
   background-color: #f8f8f8; }
 
@@ -11712,6 +11704,9 @@ select {
   .tcd__booking-summary .tcd__booking-pane .tcd__booking-terms {
     margin-top: 0;
     padding: 10px; }
+
+.tcd__addons-wrapper {
+  background-color: #f8f8f8; }
 
 /********************
        VENDORS
