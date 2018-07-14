@@ -9463,7 +9463,6 @@ h5 {
   height: 525px;
   position: relative; }
   .initializing:after {
-    content: '';
     position: absolute;
     top: 0;
     left: 50%;
@@ -10343,7 +10342,6 @@ select {
         height: 134px;
         position: relative; }
         .tcd__modify-search .tcd__search-form-tab-content .tcd__adv-slider.initializing:after {
-          content: '';
           position: absolute;
           top: 0;
           left: 50%;
