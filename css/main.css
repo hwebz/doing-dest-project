@@ -8410,6 +8410,11 @@ h5 {
     margin: 30px auto 0;
     display: block; }
 
+input, select, textarea {
+  outline: none !important; }
+  input:focus, input:hover, input:active, select:focus, select:hover, select:active, textarea:focus, textarea:hover, textarea:active {
+    outline: none !important; }
+
 .form-group {
   border: 1px solid #231f20; }
   .form-group label {
