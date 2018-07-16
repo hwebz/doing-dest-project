@@ -8221,15 +8221,30 @@ h5 {
 
 .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-price-info .tcd__results-card-discount, .tcd__price-summary .tcd__price-info .tcd__price-info-discount {
   position: absolute;
-  top: -10px;
-  right: -40px;
-  -webkit-transform: rotateZ(45deg);
-  -khtml-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
   background-color: #ed1c24;
   color: #fff;
-  padding: 20px 40px 2px 40px;
-  display: inline-block; }
+  display: inline-block;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-price-info .tcd__results-card-discount span[class^='icon-'], .tcd__price-summary .tcd__price-info .tcd__price-info-discount span[class^='icon-'] {
+    margin-right: 5px; }
 
 .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-price-info .tcd__results-card-price p, .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-price p {
   font-size: 12px;
@@ -9405,7 +9420,8 @@ h5 {
           margin-left: 5px;
           font-size: 25px; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info h3 {
-        font-size: 25px; }
+        font-size: 25px;
+        min-height: 60px; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info .tcd__tour-list-btn {
         text-align: center; }
     @media (min-width: 576px) {
@@ -9870,7 +9886,7 @@ select {
         width: auto;
         max-width: calc(100% - 430px); } }
   .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-price-info {
-    padding: 20px 15px;
+    padding: 50px 15px 20px 15px;
     border-top: 1px solid #e4e4e4;
     position: relative;
     overflow: hidden;
@@ -11730,6 +11746,9 @@ select {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-price:before {
+  content: "\e924"; }
 
 .icon-briefcase:before {
   content: "\e920"; }
