@@ -9410,7 +9410,17 @@ input, select, textarea {
       color: #fff;
       padding: 40px 30px 15px 30px;
       position: relative;
-      min-height: 250px; }
+      min-height: 250px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info .tcd__tour-list-price {
         position: absolute;
         top: -25px;
@@ -9425,8 +9435,7 @@ input, select, textarea {
           margin-left: 5px;
           font-size: 25px; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info h3 {
-        font-size: 25px;
-        min-height: 60px; }
+        font-size: 25px; }
       .tcd__tour-list .tcd__tour-list-slider .tcd__tour-list-slide .tcd__tour-list-info .tcd__tour-list-btn {
         text-align: center; }
     @media (min-width: 576px) {
