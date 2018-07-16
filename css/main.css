@@ -11738,6 +11738,369 @@ select {
 .tcd__addons-wrapper {
   background-color: #f8f8f8; }
 
+.tcd__addons .tcd__addons-flight {
+  margin-bottom: 40px; }
+  .tcd__addons .tcd__addons-flight > h4 {
+    color: #f7941d;
+    margin-bottom: 5px;
+    position: relative;
+    padding-right: 35px; }
+    @media (min-width: 576px) {
+      .tcd__addons .tcd__addons-flight > h4 {
+        padding-right: 0; } }
+  .tcd__addons .tcd__addons-flight > p {
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #6b6b6b; }
+  .tcd__addons .tcd__addons-flight .tcd__addons-flight_item {
+    -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px; }
+    .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (min-width: 576px) {
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs > h4 {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        margin: 0;
+        width: 100%;
+        padding: 15px 10px;
+        border-bottom: 1px solid #c4ced2; }
+        @media (min-width: 576px) {
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs > h4 {
+            width: auto;
+            padding: 0 0 0 15px;
+            border-bottom: 0; } }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab {
+        width: 70px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-left-color: #c4ced2;
+        height: 90px;
+        margin-top: -1px; }
+        @media (min-width: 576px) {
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab {
+            margin-top: 0; } }
+        @media (min-width: 768px) {
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab {
+            width: 90px; } }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab.active {
+          border: 1px solid #f7941d;
+          border-bottom-color: #fff; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab.active + .tcd__addons-flight_item-tab {
+            border-left-color: transparent; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab > p {
+          margin-bottom: 0; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab span[class^='icon-'] {
+          font-size: 18px;
+          margin: 5px 0; }
+          @media (min-width: 768px) {
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab span[class^='icon-'] {
+              font-size: 25px; } }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab > a {
+          font-size: 12px;
+          text-decoration: underline; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab.double {
+          width: 110px;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media (min-width: 768px) {
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab.double {
+              width: 180px; } }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab.double > p {
+            width: 100%;
+            text-align: center; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab.double > span {
+            padding: 0 10px; }
+            @media (min-width: 768px) {
+              .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab.double > span {
+                padding: 0 15px; } }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab .tcd__addons-icon {
+          text-align: center; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-tabs .tcd__addons-flight_item-tab .tcd__addons-icon p {
+            font-size: 12px;
+            margin: 0; }
+    .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content {
+      display: none; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content.active {
+        border: 1px solid #f7941d;
+        margin-top: -1px;
+        padding: 15px;
+        display: block; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content > h4 {
+        margin: 0; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content > p {
+        font-size: 12px;
+        margin-bottom: 25px; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item {
+          position: relative;
+          border-radius: 5px;
+          padding: 10px;
+          border: 1px solid #c4ced2;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          margin-right: 15px;
+          max-width: calc(50% - 8px); }
+          @media (min-width: 576px) {
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item {
+              max-width: 150px; } }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item .close-btn {
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid #f7941d;
+            background-color: #fff;
+            font-size: 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            width: 25px;
+            height: 25px;
+            padding: 0;
+            cursor: pointer;
+            color: #f7941d;
+            top: -13px;
+            right: -13px;
+            display: none; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item .close-btn:hover {
+              background-color: #f7941d;
+              color: #fff;
+              border-color: #fff; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item .tcd__addons-icon {
+            text-align: center; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item .tcd__addons-icon span[class^='icon-'] {
+              font-size: 25px; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item .tcd__addons-icon p {
+              font-size: 12px;
+              margin: 0; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item > span {
+            padding: 0 10px; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item > h4 {
+            width: 100%;
+            text-align: center;
+            margin: 15px 0 0 0; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item.active {
+            background-color: #f7941d;
+            color: #fff; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item.active .close-btn {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-baggages .tcd__addons-baggage-item:last-child {
+            margin-right: 0; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content[id^='tcd__addons-seat'].active {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left > h4 {
+          margin: 0; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left > p {
+          font-size: 12px;
+          margin-bottom: 25px; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left .tcd__addons-seat-types {
+          list-style: none; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left .tcd__addons-seat-types li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left .tcd__addons-seat-types li span:first-child {
+              width: 10px;
+              height: 10px;
+              margin-right: 10px; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left .tcd__addons-seat-types li span:last-child {
+              -webkit-box-flex: 1;
+                  -ms-flex-positive: 1;
+                      flex-grow: 1; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left .tcd__addons-seat-types li span.gray {
+              background-color: #c4ced2; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left .tcd__addons-seat-types li span.blue {
+              background-color: #00aeef; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left .tcd__addons-seat-types li span.yellow {
+              background-color: #f7941d; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__left .tcd__addons-seat-types li span.red {
+              background-color: #ed1c24; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        height: 280px;
+        overflow: hidden;
+        overflow-y: visible; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right .tcd__addons-seat-map {
+          width: 250px;
+          margin: 0 auto;
+          border-left: 5px solid #c4ced2;
+          border-right: 5px solid #c4ced2;
+          padding: 0 15px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right .tcd__addons-seat-map ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right .tcd__addons-seat-map ul li {
+              -webkit-box-flex: 1;
+                  -ms-flex-positive: 1;
+                      flex-grow: 1;
+              width: 25px;
+              height: 25px;
+              margin: 3px;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right .tcd__addons-seat-map ul li.seat {
+                background-color: #c4ced2; }
+              .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right .tcd__addons-seat-map ul li.selected {
+                background-color: #ed1c24; }
+                .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right .tcd__addons-seat-map ul li.selected:before {
+                  font-family: 'icomoon';
+                  content: "\e92c";
+                  color: #fff;
+                  font-size: 16px; }
+              .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right .tcd__addons-seat-map ul li.blue {
+                background-color: #00aeef; }
+              .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-seat__right .tcd__addons-seat-map ul li.yellow {
+                background-color: #f7941d; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals > h4 {
+        margin: 0; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals > p {
+        font-size: 12px;
+        margin-bottom: 25px; }
+      .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        overflow-x: visible;
+        padding-bottom: 15px; }
+        .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal {
+          margin-right: 10px;
+          text-align: center;
+          min-width: 40%; }
+          @media (min-width: 576px) {
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal {
+              min-width: 30%; } }
+          @media (min-width: 768px) {
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal {
+              min-width: 20%; } }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal img {
+            width: 100%; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal p {
+            margin: 10px 0; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal:last-child {
+            margin-right: 0; }
+          .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal .btn {
+            padding: 5px; }
+            .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal .btn.active {
+              background-color: #ed1c24;
+              text-transform: uppercase;
+              border-color: #ed1c24; }
+              .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal .btn.active:active, .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal .btn.active:focus {
+                -webkit-box-shadow: none;
+                        box-shadow: none; }
+            @media (min-width: 576px) {
+              .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal .btn {
+                padding: 5px 15px; } }
+            @media (min-width: 768px) {
+              .tcd__addons .tcd__addons-flight .tcd__addons-flight_item .tcd__addons-flight_item-contents .tcd__addons-content .tcd__addons-meals .tcd__addons-meals-slider .tcd__addons-meal .btn {
+                padding: 5px 25px; } }
+
+.tcd__addons .tcd__addons-btns {
+  text-align: right; }
+
 /********************
        VENDORS
 *********************/
