@@ -8107,7 +8107,8 @@ body, .tcd__tour-list .tcd__tour-list-title h1 span, .tcd__introduction .tcd__in
   font-style: italic; }
 
 h1, h2, h3, h4, h5, h6, strong, b, .btn.btn-primary, .btn.btn-primary.big, .tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .btn,
-.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a, .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .form-group input, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .form-group input, .tcd__small-banner .tcd__small-banner-wrapper .tcd__small-banner-path .tcd__small-banner-point p:last-child, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-activity-list .tcd__detail-activity-list-value, .tcd__detail-cards .tcd__detail-card .tcd__detail-info-detail .tcd__detail-info-detail-wrapper .tcd__detail-info-right .tcd__detail-info-tabs li a, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td {
+.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a, .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .form-group input, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .form-group input, .tcd__small-banner .tcd__small-banner-wrapper .tcd__small-banner-path .tcd__small-banner-point p:last-child, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-activity-list .tcd__detail-activity-list-value, .tcd__detail-cards .tcd__detail-card .tcd__detail-info-detail .tcd__detail-info-detail-wrapper .tcd__detail-info-right .tcd__detail-info-tabs li a, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td, .credit-card-box .front,
+.credit-card-box .back {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-style: normal; }
@@ -8187,10 +8188,10 @@ h5 {
 .form-group {
   border-radius: 5px; }
 
-.tcd__introduction, .tcd__popular-hotels, .tcd__results-wrapper, .tcd__detail-wrapper, .tcd__contact-detail-wrapper, .tcd__addons-wrapper {
+.tcd__introduction, .tcd__popular-hotels, .tcd__results-wrapper, .tcd__detail-wrapper, .tcd__contact-detail-wrapper, .tcd__addons-wrapper, .tcd__payment-wrapper {
   padding: 20px 0; }
   @media (min-width: 768px) {
-    .tcd__introduction, .tcd__popular-hotels, .tcd__results-wrapper, .tcd__detail-wrapper, .tcd__contact-detail-wrapper, .tcd__addons-wrapper {
+    .tcd__introduction, .tcd__popular-hotels, .tcd__results-wrapper, .tcd__detail-wrapper, .tcd__contact-detail-wrapper, .tcd__addons-wrapper, .tcd__payment-wrapper {
       padding: 40px 0; } }
 
 .tcd__tour-list .tcd__tour-list-title, .tcd__introduction .tcd__introduction-title, .tcd__popular-hotels .tcd__popular-hotels-title {
@@ -12100,6 +12101,309 @@ select {
 
 .tcd__addons .tcd__addons-btns {
   text-align: right; }
+
+.credit-card-box {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  width: 400px;
+  height: 280px;
+  position: absolute;
+  top: -112px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  .credit-card-box:hover .flip,
+  .credit-card-box.hover .flip {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .credit-card-box .front,
+  .credit-card-box .back {
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background: linear-gradient(135deg, #bd6772, #53223f);
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3); }
+    .credit-card-box .front::before,
+    .credit-card-box .back::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url("http://cdn.flaticon.com/svg/44/44386.svg") no-repeat center;
+      background-size: cover;
+      opacity: .05; }
+  .credit-card-box .flip {
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: relative; }
+  .credit-card-box .logo {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 60px; }
+    .credit-card-box .logo svg {
+      width: 100%;
+      height: auto;
+      fill: #fff; }
+  .credit-card-box .front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  .credit-card-box .back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+    .credit-card-box .back .logo {
+      top: 185px; }
+  .credit-card-box .chip {
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #ddccf0 0%, #d1e9f5 44%, #f8ece7 100%);
+    border-radius: 8px; }
+    .credit-card-box .chip::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 4px solid rgba(128, 128, 128, 0.1);
+      width: 80%;
+      height: 70%;
+      border-radius: 5px; }
+  .credit-card-box .strip {
+    background: linear-gradient(135deg, #404040, #1a1a1a);
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 30px;
+    left: 0; }
+  .credit-card-box .number {
+    position: absolute;
+    margin: 0 auto;
+    top: 103px;
+    left: 19px;
+    font-size: 38px; }
+  .credit-card-box label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 3px; }
+  .credit-card-box .card-holder,
+  .credit-card-box .card-expiration-date {
+    position: absolute;
+    margin: 0 auto;
+    top: 180px;
+    left: 19px;
+    font-size: 22px;
+    text-transform: capitalize; }
+  .credit-card-box .card-expiration-date {
+    text-align: right;
+    left: auto;
+    right: 20px; }
+  .credit-card-box .ccv {
+    height: 36px;
+    background: #fff;
+    width: 91%;
+    border-radius: 5px;
+    top: 110px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: 0 auto;
+    color: #000;
+    text-align: right;
+    padding: 10px; }
+    .credit-card-box .ccv label {
+      margin: -25px 0 14px;
+      color: #fff; }
+
+.tcd__payment .tcd__payment-passengers .tcd__payment-passengers-wrapper, .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper, .tcd__payment .tcd__payment-terms {
+  background-color: #fff;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); }
+
+.tcd__payment-wrapper {
+  background-color: #f8f8f8; }
+
+.tcd__payment .tcd__payment-passengers {
+  margin-bottom: 20px; }
+  .tcd__payment .tcd__payment-passengers > h2 {
+    margin-bottom: 20px;
+    position: relative; }
+  .tcd__payment .tcd__payment-passengers .tcd__payment-passengers-wrapper {
+    padding: 15px;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: visible; }
+    .tcd__payment .tcd__payment-passengers .tcd__payment-passengers-wrapper table {
+      border: none;
+      min-width: 600px; }
+      .tcd__payment .tcd__payment-passengers .tcd__payment-passengers-wrapper table tr th, .tcd__payment .tcd__payment-passengers .tcd__payment-passengers-wrapper table tr td {
+        border: none;
+        padding: 2px 5px;
+        text-align: center; }
+        .tcd__payment .tcd__payment-passengers .tcd__payment-passengers-wrapper table tr th:nth-child(2), .tcd__payment .tcd__payment-passengers .tcd__payment-passengers-wrapper table tr td:nth-child(2) {
+          text-align: left; }
+
+.tcd__payment .tcd__payment-methods {
+  margin-bottom: 20px; }
+  .tcd__payment .tcd__payment-methods > h2 {
+    margin-bottom: 0;
+    position: relative; }
+  .tcd__payment .tcd__payment-methods > p {
+    margin-bottom: 20px; }
+  .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-tabs .tcd__payment-methods-tab {
+      width: 90px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-right-color: #c4ced2;
+      padding: 10px;
+      margin-top: -1px; }
+      @media (min-width: 576px) {
+        .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-tabs .tcd__payment-methods-tab {
+          margin-top: 0; } }
+      @media (min-width: 768px) {
+        .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-tabs .tcd__payment-methods-tab {
+          width: 110px; } }
+      .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-tabs .tcd__payment-methods-tab.active {
+        border: 1px solid #f7941d;
+        border-bottom-color: #fff; }
+      .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-tabs .tcd__payment-methods-tab > p {
+        margin: 0; }
+      .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-tabs .tcd__payment-methods-tab span[class^='icon-'] {
+        font-size: 25px;
+        margin: 5px 0; }
+        @media (min-width: 768px) {
+          .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-tabs .tcd__payment-methods-tab span[class^='icon-'] {
+            font-size: 35px; } }
+  .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content {
+    display: none; }
+    .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content.active {
+      border: 1px solid #f7941d;
+      margin-top: -1px;
+      padding: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      min-height: 430px; }
+      @media (min-width: 768px) {
+        .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content.active {
+          min-height: auto; } }
+    @media (min-width: 768px) {
+      .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content .tcd__payment-credit-card__left {
+        width: 50%; } }
+    .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content .tcd__payment-credit-card__left .tcd__credit-card-columns {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content .tcd__payment-credit-card__left .tcd__credit-card-columns .form-group {
+        width: calc(50% - 5px);
+        margin-right: 10px; }
+        .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content .tcd__payment-credit-card__left .tcd__credit-card-columns .form-group:last-child {
+          margin-right: 0; }
+    .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content .tcd__payment-credit-card__right {
+      position: relative; }
+      @media (min-width: 768px) {
+        .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content .tcd__payment-credit-card__right {
+          width: 50%; } }
+      .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content .tcd__payment-credit-card__right .credit-card-box {
+        position: relative;
+        top: auto;
+        left: auto;
+        -webkit-transform: scale(0.65);
+        -khtml-transform: scale(0.65);
+        transform: scale(0.65);
+        -webkit-transform-origin: top left;
+        -khtml-transform-origin: top left;
+        transform-origin: top left;
+        margin: 0 auto;
+        height: auto; }
+        @media (min-width: 576px) {
+          .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content .tcd__payment-credit-card__right .credit-card-box {
+            -webkit-transform-origin: top center;
+            -khtml-transform-origin: top center;
+            transform-origin: top center;
+            -webkit-transform: scale(0.75);
+            -khtml-transform: scale(0.75);
+            transform: scale(0.75); } }
+    .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content#tcd__payment-method-0 {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      @media (min-width: 768px) {
+        .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper .tcd__payment-methods-contents .tcd__payment-methods-content#tcd__payment-method-0 {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+
+.tcd__payment .tcd__payment-terms .tcd__payment-terms-and-conditions {
+  padding: 15px;
+  border-bottom: 1px solid #e4e4e4;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: visible; }
+
+.tcd__payment .tcd__payment-terms .tcd__payment-terms-aggrements {
+  padding: 15px; }
+  .tcd__payment .tcd__payment-terms .tcd__payment-terms-aggrements .tcd__checkbox small {
+    color: #ed1c24;
+    margin-left: 10px; }
+
+.tcd__payment .tcd__payment-btns {
+  margin: 20px 0;
+  text-align: right; }
+  .tcd__payment .tcd__payment-btns .btn {
+    text-transform: uppercase; }
 
 /********************
        VENDORS
