@@ -8096,7 +8096,11 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: normal;
   font-style: normal; }
 
+<<<<<<< HEAD
 body, .tcd__tour-list .tcd__tour-list-title h1 span, .tcd__introduction .tcd__introduction-title h1 span, .tcd__popular-hotels .tcd__popular-hotels-title h1 span, .btn.btn-primary.small, .btn.btn-primary.big, .btn.btn-primary.small-light, .btn.btn-primary.tcd__more, .daterangepicker, .daterangepicker .calendar-table thead tr th.month, .tcd__modal .modal-dialog .modal-content .modal-footer .btn, .tcd__results .tcd__results-title h1 span, .tcd__results-card.type-2 .tcd__results-card-wrapper .tcd__results-price h3 span, .tcd__detail h2 > span, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td span, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td:first-child {
+=======
+body, .tcd__tour-list .tcd__tour-list-title h1 span, .tcd__introduction .tcd__introduction-title h1 span, .tcd__popular-hotels .tcd__popular-hotels-title h1 span, .tcd__detail h2 > span, .tcd__contact-details .tcd__contact-details-hotels h2 > span, .btn.btn-primary.small, .btn.btn-primary.big, .btn.btn-primary.small-light, .btn.btn-primary.tcd__more, .daterangepicker, .daterangepicker .calendar-table thead tr th.month, .tcd__modal .modal-dialog .modal-content .modal-footer .btn, .tcd__results .tcd__results-title h1 span, .tcd__results .tcd__results-list .tcd__results-card.type-2 .tcd__results-card-wrapper .tcd__results-price h3 span, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td span, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td:first-child {
+>>>>>>> 27fec65411e12e1adbaa3dab32b112d331945896
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
   font-style: normal; }
@@ -8107,7 +8111,7 @@ body, .tcd__tour-list .tcd__tour-list-title h1 span, .tcd__introduction .tcd__in
   font-style: italic; }
 
 h1, h2, h3, h4, h5, h6, strong, b, .btn.btn-primary, .btn.btn-primary.big, .tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .btn,
-.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a, .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .form-group input, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .form-group input, .tcd__small-banner .tcd__small-banner-wrapper .tcd__small-banner-path .tcd__small-banner-point p:last-child, .tcd__detail .tcd__detail-hotels .tcd__detail-hotel label, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-activity-list .tcd__detail-activity-list-value, .tcd__detail-cards .tcd__detail-card .tcd__detail-info-detail .tcd__detail-info-detail-wrapper .tcd__detail-info-right .tcd__detail-info-tabs li a, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td, .credit-card-box .front,
+.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a, .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .form-group input, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .form-group input, .tcd__small-banner .tcd__small-banner-wrapper .tcd__small-banner-path .tcd__small-banner-point p:last-child, .tcd__detail-hotels .tcd__detail-hotel label, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-activity-list .tcd__detail-activity-list-value, .tcd__detail-cards .tcd__detail-card .tcd__detail-info-detail .tcd__detail-info-detail-wrapper .tcd__detail-info-right .tcd__detail-info-tabs li a, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td, .credit-card-box .front,
 .credit-card-box .back {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
@@ -8175,7 +8179,11 @@ h5 {
   -khtml-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
+<<<<<<< HEAD
 .tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link:hover, .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-info .tcd__footer-socials li a:hover, .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-tags .tcd__footer-tags-wrapper .tcd__footer-tag:hover, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a:hover, .tcd__search-form-tab-content .tcd__search-form-flight-types li a:hover, .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title a:hover, .tcd__filters .tcd__filters-block .tcd__filters-content .tcd__filters-activity h4 a:hover[class^='icon-'], .tcd__results-card .tcd__results-card-thumbnail .tcd__results-card-map:hover, .tcd__breadcrum ul li a:hover, .tcd__detail .tcd__detail-hotels .tcd__detail-hotel label:hover, .tcd__detail-cards .tcd__detail-card .tcd__detail-info:hover, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-btn a:hover, .tcd__contact-details .tcd__contact-details-expand a span:hover[class^='icon-'], .tcd__booking-summary .tcd__booking-pane .tcd__booking-flight .tcd__booking-flight-direction .tcd__booking-flight-info > a:hover {
+=======
+.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link:hover, .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-info .tcd__footer-socials li a:hover, .tcd__footer .tcd__footer-row .tcd__footer-column .tcd__footer-tags .tcd__footer-tags-wrapper .tcd__footer-tag:hover, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a:hover, .tcd__search-form-tab-content .tcd__search-form-flight-types li a:hover, .tcd__hotel-list .tcd__hotel-item .tcd__hotel-content .tcd__hotel-title a:hover, .tcd__filters .tcd__filters-block .tcd__filters-content .tcd__filters-activity h4 a:hover[class^='icon-'], .tcd__results .tcd__results-list .tcd__results-card .tcd__results-card-thumbnail .tcd__results-card-map:hover, .tcd__breadcrum ul li a:hover, .tcd__detail-hotels .tcd__detail-hotel label:hover, .tcd__detail-cards .tcd__detail-card .tcd__detail-info:hover, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-btn a:hover, .tcd__contact-details .tcd__contact-details-expand a span:hover[class^='icon-'], .tcd__booking-summary .tcd__booking-pane .tcd__booking-flight .tcd__booking-flight-direction .tcd__booking-flight-info > a:hover {
+>>>>>>> 27fec65411e12e1adbaa3dab32b112d331945896
   filter: alpha(opacity=80);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   -webkit-opacity: 0.8;
@@ -8334,10 +8342,26 @@ h5 {
     .tcd__price-summary .navbar-toggler, .tcd__booking-summary .navbar-toggler {
       display: none; } }
 
+<<<<<<< HEAD
 .tcd__payment .tcd__payment-methods .tcd__payment-methods-wrapper, .tcd__payment .tcd__payment-terms, .tcd__payment-passengers .tcd__payment-passengers-wrapper, .tcd__summary .tcd__summary-price {
   background-color: #fff;
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); }
+=======
+.tcd__detail h2, .tcd__contact-details .tcd__contact-details-hotels h2 {
+  position: relative; }
+  .tcd__detail h2 > span, .tcd__contact-details .tcd__contact-details-hotels h2 > span {
+    display: block;
+    font-size: 16px; }
+    @media (min-width: 576px) {
+      .tcd__detail h2 > span, .tcd__contact-details .tcd__contact-details-hotels h2 > span {
+        display: inline; } }
+  .tcd__detail h2.type-2, .tcd__contact-details .tcd__contact-details-hotels h2.type-2 {
+    margin-bottom: 15px; }
+    .tcd__detail h2.type-2 > span, .tcd__contact-details .tcd__contact-details-hotels h2.type-2 > span {
+      display: block;
+      margin-top: 5px; }
+>>>>>>> 27fec65411e12e1adbaa3dab32b112d331945896
 
 /********************
         COMPONENTS
@@ -10841,21 +10865,7 @@ select {
   .tcd__adv-slider.type-2 .tcd__adv .tcd__adv-content .tcd__adv-info .tcd__adv-price span {
     font-size: 12px; }
 
-.tcd__detail h2 {
-  position: relative; }
-  .tcd__detail h2 > span {
-    display: block;
-    font-size: 16px; }
-    @media (min-width: 576px) {
-      .tcd__detail h2 > span {
-        display: inline; } }
-  .tcd__detail h2.type-2 {
-    margin-bottom: 15px; }
-    .tcd__detail h2.type-2 > span {
-      display: block;
-      margin-top: 5px; }
-
-.tcd__detail .tcd__detail-hotels {
+.tcd__detail-hotels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10867,10 +10877,10 @@ select {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   @media (min-width: 576px) {
-    .tcd__detail .tcd__detail-hotels {
+    .tcd__detail-hotels {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
-  .tcd__detail .tcd__detail-hotels .tcd__detail-hotel {
+  .tcd__detail-hotels .tcd__detail-hotel {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -10883,17 +10893,17 @@ select {
     width: calc(50% - 10px);
     margin-bottom: 10px; }
     @media (min-width: 576px) {
-      .tcd__detail .tcd__detail-hotels .tcd__detail-hotel {
+      .tcd__detail-hotels .tcd__detail-hotel {
         width: auto;
         margin-bottom: 0; } }
-    .tcd__detail .tcd__detail-hotels .tcd__detail-hotel:nth-child(2n + 2) {
+    .tcd__detail-hotels .tcd__detail-hotel:nth-child(2n + 2) {
       margin-right: 0; }
       @media (min-width: 576px) {
-        .tcd__detail .tcd__detail-hotels .tcd__detail-hotel:nth-child(2n + 2) {
+        .tcd__detail-hotels .tcd__detail-hotel:nth-child(2n + 2) {
           margin-right: 10px; } }
-    .tcd__detail .tcd__detail-hotels .tcd__detail-hotel:last-child {
+    .tcd__detail-hotels .tcd__detail-hotel:last-child {
       margin: 0; }
-    .tcd__detail .tcd__detail-hotels .tcd__detail-hotel label {
+    .tcd__detail-hotels .tcd__detail-hotel label {
       color: #fff;
       position: absolute;
       width: 100%;
@@ -10914,11 +10924,11 @@ select {
       font-size: 25px;
       background-color: rgba(0, 0, 0, 0.5);
       cursor: pointer; }
-    .tcd__detail .tcd__detail-hotels .tcd__detail-hotel input {
+    .tcd__detail-hotels .tcd__detail-hotel input {
       position: absolute;
       visibility: hidden;
       opacity: 0; }
-      .tcd__detail .tcd__detail-hotels .tcd__detail-hotel input:checked + label {
+      .tcd__detail-hotels .tcd__detail-hotel input:checked + label {
         outline: 5px solid #f7941d;
         background-color: rgba(247, 148, 29, 0.5); }
 
