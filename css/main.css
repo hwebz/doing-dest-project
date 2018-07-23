@@ -8271,7 +8271,7 @@ h5 {
 
 .tcd__results-card .tcd__results-card-price-info .tcd__results-card-included p, .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-included p, .tcd__booking-summary .tcd__booking-pane .tcd__booking-price .tcd__booking-price-included p {
   font-size: 12px;
-  text-align: right;
+  text-align: left;
   margin: 0; }
   .tcd__results-card .tcd__results-card-price-info .tcd__results-card-included p span[class^='icon-'], .tcd__price-summary .tcd__price-info .tcd__price-info-wrapper .tcd__price-info-included p span[class^='icon-'], .tcd__booking-summary .tcd__booking-pane .tcd__booking-price .tcd__booking-price-included p span[class^='icon-'] {
     margin-right: 5px;
@@ -8436,7 +8436,7 @@ input, select, textarea {
     outline: none !important; }
 
 .form-group {
-  border: 1px solid #231f20; }
+  border: 1px solid transparent; }
   .form-group label {
     font-size: 12px;
     display: block;
@@ -11704,9 +11704,9 @@ select {
       .tcd__contact-details .tcd__contact-details-form .tcd__contact-details-field {
         width: calc(33.33% - 10px); } }
     .tcd__contact-details .tcd__contact-details-form .tcd__contact-details-field .form-group {
-      border-color: #bfbfbf; }
+      border-color: transparent; }
       .tcd__contact-details .tcd__contact-details-form .tcd__contact-details-field .form-group.is-invalid {
-        border-color: #ed1c24; }
+        border-color: transparent; }
       .tcd__contact-details .tcd__contact-details-form .tcd__contact-details-field .form-group select {
         background-size: 15px;
         background-position: right 10px top 0px; }
