@@ -48,12 +48,88 @@
               <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
               <li class="nav-item">
-                <button class="btn btn-primary small">Đăng ký</button>
+                <button class="btn btn-primary small" data-target="#register-form" data-toggle="modal">Đăng ký</button>
               </li>
               <li class="nav-item">
-                <button class="btn btn-primary small">Đăng nhập</button>
+                <button class="btn btn-primary small" data-target="#login-form" data-toggle="modal">Đăng nhập</button>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tcd__modal tcd__map-modal modal fade" id="login-form">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Đăng nhập</h4>
+            <button type="button" data-dismiss="modal"><span class="icon-cancel-music"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tcd__login-form">
+              <div class="tcd__login-form-field">
+                    <div class="form-group">
+                      <label>Email hoặc tên người dùng</label>
+                      <input class="form-control" name="" type="text" placeholder="" required value="">
+                    </div>
+              </div>
+              <div class="tcd__login-form-field">
+                    <div class="form-group">
+                      <label>Mật khẩu</label>
+                      <input class="form-control" name="" type="password" placeholder="" required value="">
+                    </div>
+              </div>
+              <div class="tcd__login-form-field">
+                <div class="tcd__checkbox">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Nhớ tài khoản</label>
+                </div>
+              </div>
+              <div class="tcd__login-form-btns">
+                <button class="btn btn-primary big" type="submit">Đăng nhập</button>
+              </div>
+              <div class="tcd__login-form-social">
+                <p>Hoặc đăng nhập bằng tài khoản:</p>
+                <button class="btn btn-primary facebook" type="button">Facebook<span class="icon-facebook"></span></button>
+                <button class="btn btn-primary instagram" type="button">Instagram<span class="icon-instagram"></span></button>
+                <button class="btn btn-primary twitter" type="button">Twitter<span class="icon-twitter-1"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tcd__modal tcd__map-modal modal fade" id="register-form">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Đăng ký</h4>
+            <button type="button" data-dismiss="modal"><span class="icon-cancel-music"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tcd__login-form">
+              <div class="tcd__login-form-field">
+                    <div class="form-group">
+                      <label>Email hoặc tên người dùng</label>
+                      <input class="form-control" name="" type="text" placeholder="" required value="">
+                    </div>
+              </div>
+              <div class="tcd__login-form-field">
+                    <div class="form-group">
+                      <label>Mật khẩu</label>
+                      <input class="form-control" name="" type="password" placeholder="" required value="">
+                    </div>
+              </div>
+              <div class="tcd__login-form-field">
+                    <div class="form-group">
+                      <label>Nhập lại mật khẩu</label>
+                      <input class="form-control" name="" type="password" placeholder="" required value="">
+                    </div>
+              </div>
+              <div class="tcd__login-form-btns">
+                <button class="btn btn-primary big" type="submit">Đăng ký</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
