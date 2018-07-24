@@ -8107,7 +8107,7 @@ body, .tcd__tour-list .tcd__tour-list-title h1 span, .tcd__introduction .tcd__in
   font-style: italic; }
 
 h1, h2, h3, h4, h5, h6, strong, b, .btn.btn-primary, .btn.btn-primary.big, .tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .btn,
-.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a, .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .form-group input, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .form-group input, .tcd__small-banner .tcd__small-banner-wrapper .tcd__small-banner-path .tcd__small-banner-point p:last-child, .tcd__detail-hotels .tcd__detail-hotel label, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-activity-list .tcd__detail-activity-list-value, .tcd__detail-cards .tcd__detail-card .tcd__detail-info-detail .tcd__detail-info-detail-wrapper .tcd__detail-info-right .tcd__detail-info-tabs li a, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td, .credit-card-box .front,
+.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a, .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .form-group input, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .form-group input, .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text p:first-child, .tcd__small-banner .tcd__small-banner-wrapper .tcd__small-banner-path .tcd__small-banner-point p:last-child, .tcd__detail-hotels .tcd__detail-hotel label, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-activity-list .tcd__detail-activity-list-value, .tcd__detail-cards .tcd__detail-card .tcd__detail-info-detail .tcd__detail-info-detail-wrapper .tcd__detail-info-right .tcd__detail-info-tabs li a, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td, .credit-card-box .front,
 .credit-card-box .back {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
@@ -8347,6 +8347,13 @@ h5 {
     @media (min-width: 576px) {
       .tcd__detail h2 > span, .tcd__contact-details .tcd__contact-details-hotels h2 > span {
         display: inline; } }
+    .tcd__detail h2 > span strong, .tcd__contact-details .tcd__contact-details-hotels h2 > span strong {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background-color: #5bbb54;
+      text-align: center;
+      color: #fff;
+      display: inline-block; }
   .tcd__detail h2.type-2, .tcd__contact-details .tcd__contact-details-hotels h2.type-2 {
     margin-bottom: 15px; }
     .tcd__detail h2.type-2 > span, .tcd__contact-details .tcd__contact-details-hotels h2.type-2 > span {
@@ -9982,6 +9989,13 @@ select {
                 flex-grow: 1; }
         .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text p {
           margin-bottom: 5px; }
+          .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text p:first-child {
+            padding: 2px 5px;
+            border-radius: 5px;
+            background-color: #5bbb54;
+            text-align: center;
+            color: #fff;
+            display: inline-block; }
     .tcd__results-card .tcd__results-card-info .detail-btn {
       text-decoration: underline; }
     @media (min-width: 576px) {
@@ -10442,7 +10456,7 @@ select {
         -ms-flex-direction: column;
             flex-direction: column; }
     .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper {
-      min-width: 85%; }
+      min-width: 100%; }
       .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-introduction {
         color: #231f20; }
         .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper .tcd__search-form-tour-introduction h3 {
@@ -10474,9 +10488,6 @@ select {
                 -ms-flex-positive: initial;
                     flex-grow: initial;
             margin-left: 7px; } }
-      @media (min-width: 992px) {
-        .tcd__modify-search .tcd__search-form-tab-content .tcd__search-form-wrapper {
-          min-width: 70%; } }
     .tcd__modify-search .tcd__search-form-tab-content .tcd__adv-slider {
       margin-top: 10px;
       -webkit-box-flex: 1;
