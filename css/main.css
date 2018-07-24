@@ -8436,7 +8436,7 @@ input, select, textarea {
     outline: none !important; }
 
 .form-group {
-  border: 1px solid transparent; }
+  border: 1px solid #231f20; }
   .form-group label {
     font-size: 12px;
     display: block;
@@ -11704,9 +11704,9 @@ select {
       .tcd__contact-details .tcd__contact-details-form .tcd__contact-details-field {
         width: calc(33.33% - 10px); } }
     .tcd__contact-details .tcd__contact-details-form .tcd__contact-details-field .form-group {
-      border-color: transparent; }
+      border-color: #bfbfbf; }
       .tcd__contact-details .tcd__contact-details-form .tcd__contact-details-field .form-group.is-invalid {
-        border-color: transparent; }
+        border-color: #ed1c24; }
       .tcd__contact-details .tcd__contact-details-form .tcd__contact-details-field .form-group select {
         background-size: 15px;
         background-position: right 10px top 0px; }
