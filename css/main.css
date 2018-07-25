@@ -10009,7 +10009,6 @@ select {
     padding: 50px 15px 20px 15px;
     border-top: 1px solid #e4e4e4;
     position: relative;
-    overflow: hidden;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10024,12 +10023,59 @@ select {
               flex-grow: 1;
       position: relative;
       margin-top: 15px; }
-      .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .btn {
-        width: 100%; }
+      .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
         @media (min-width: 768px) {
-          .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .btn {
+          .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns {
             position: absolute;
             bottom: 0; } }
+        .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .detail-link {
+          margin-top: 10px;
+          text-decoration: underline;
+          text-align: center; }
+        .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown > .btn {
+          width: 100%; }
+          .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown > .btn:after {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            -webkit-transform: translate(0, -50%);
+                    transform: translate(0, -50%); }
+        .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu {
+          padding: 0; }
+          .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            min-width: 300px;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            border-bottom: 1px solid #e4e4e4;
+            padding: 10px; }
+            .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:last-child {
+              border: none; }
+            .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item strong {
+              color: #f7941d; }
+            .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item.active {
+              background-color: #f7941d; }
+              .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item.active span, .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item.active strong {
+                color: #fff; }
+            .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:active, .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:focus {
+              background-color: #e4e4e4; }
+              .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:active span, .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:focus span {
+                color: #6b6b6b; }
     @media (min-width: 768px) {
       .tcd__results-card .tcd__results-card-price-info {
         width: 175px;
