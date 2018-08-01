@@ -8107,7 +8107,7 @@ body, .tcd__tour-list .tcd__tour-list-title h1 span, .tcd__introduction .tcd__in
   font-style: italic; }
 
 h1, h2, h3, h4, h5, h6, strong, b, .btn.btn-primary, .btn.btn-primary.big, .tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .btn,
-.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a, .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .form-group input, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .form-group input, .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text p:first-child, .tcd__small-banner .tcd__small-banner-wrapper .tcd__small-banner-path .tcd__small-banner-point p:last-child, .tcd__detail-hotels .tcd__detail-hotel label, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-activity-list .tcd__detail-activity-list-value, .tcd__detail-cards .tcd__detail-card .tcd__detail-info-detail .tcd__detail-info-detail-wrapper .tcd__detail-info-right .tcd__detail-info-tabs li a, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td, .credit-card-box .front,
+.tcd__header .tcd__header-content .tcd__header-navigation .navbar-nav .nav-item .nav-link, .tcd__footer .tcd__footer-row .tcd__footer-navigation ul li a, .tcd__search-form-tab-content .tcd__search-form-flight-form .tcd__search-form-field .form-group input, .tcd__search-form-tab-content .tcd__search-form-tour-form .tcd__search-form-field .form-group input, .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text p:first-child, .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown > p, .tcd__small-banner .tcd__small-banner-wrapper .tcd__small-banner-path .tcd__small-banner-point p:last-child, .tcd__detail-hotels .tcd__detail-hotel label, .tcd__detail-cards .tcd__detail-card .tcd__detail-info .tcd__detail-right .tcd__detail-activity-list .tcd__detail-activity-list-value, .tcd__detail-cards .tcd__detail-card .tcd__detail-info-detail .tcd__detail-info-detail-wrapper .tcd__detail-info-right .tcd__detail-info-tabs li a, .tcd__detail-cancellation .tcd__detail-cancellation-wrapper table tbody tr:last-child td, .credit-card-box .front,
 .credit-card-box .back {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
@@ -9996,6 +9996,42 @@ select {
             text-align: center;
             color: #fff;
             display: inline-block; }
+        .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown > p {
+          padding: 2px 5px;
+          border-radius: 5px;
+          background-color: #5bbb54;
+          text-align: center;
+          color: #fff;
+          display: inline-block;
+          cursor: pointer; }
+        .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu {
+          padding: 0; }
+          .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            min-width: 300px;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            border-bottom: 1px solid #e4e4e4;
+            padding: 10px; }
+            .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item:last-child {
+              border: none; }
+            .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item strong {
+              color: #f7941d; }
+            .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item.active {
+              background-color: #f7941d; }
+              .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item.active span, .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item.active strong {
+                color: #fff; }
+            .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item:active, .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item:focus {
+              background-color: #e4e4e4; }
+              .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item:active span, .tcd__results-card .tcd__results-card-info .tcd__results-card-detail-info .detail-info-text .dropdown .dropdown-menu .dropdown-item:focus span {
+                color: #6b6b6b; }
     .tcd__results-card .tcd__results-card-info .detail-btn {
       text-decoration: underline; }
     @media (min-width: 576px) {
@@ -10040,42 +10076,6 @@ select {
           margin-top: 10px;
           text-decoration: underline;
           text-align: center; }
-        .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown > .btn {
-          width: 100%; }
-          .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown > .btn:after {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            -webkit-transform: translate(0, -50%);
-                    transform: translate(0, -50%); }
-        .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu {
-          padding: 0; }
-          .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row;
-            min-width: 300px;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
-            border-bottom: 1px solid #e4e4e4;
-            padding: 10px; }
-            .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:last-child {
-              border: none; }
-            .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item strong {
-              color: #f7941d; }
-            .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item.active {
-              background-color: #f7941d; }
-              .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item.active span, .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item.active strong {
-                color: #fff; }
-            .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:active, .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:focus {
-              background-color: #e4e4e4; }
-              .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:active span, .tcd__results-card .tcd__results-card-price-info .tcd__results-card-btn .tcd__results-card-btns .dropdown .dropdown-menu .dropdown-item:focus span {
-                color: #6b6b6b; }
     @media (min-width: 768px) {
       .tcd__results-card .tcd__results-card-price-info {
         width: 175px;
@@ -11674,7 +11674,7 @@ select {
     .tcd__progress-bar {
       width: 150px;
       padding-left: 150px; } }
-  .tcd__progress-bar:after, .tcd__progress-bar:before {
+  .tcd__progress-bar > span, .tcd__progress-bar:before {
     content: '';
     position: absolute;
     top: 0;
@@ -11684,13 +11684,13 @@ select {
   .tcd__progress-bar:before {
     background-color: #e4e4e4;
     width: 100%; }
-  .tcd__progress-bar.seventy-four:after {
+  .tcd__progress-bar.seventy-four > span {
     width: 74%; }
-  .tcd__progress-bar.twenty-one:after {
+  .tcd__progress-bar.twenty-one > span {
     width: 21%; }
-  .tcd__progress-bar.four:after {
+  .tcd__progress-bar.four > span {
     width: 4%; }
-  .tcd__progress-bar.one:after {
+  .tcd__progress-bar.one > span {
     width: 1%; }
 
 .tcd__contact-detail-wrapper {
