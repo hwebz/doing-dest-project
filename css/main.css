@@ -9458,7 +9458,8 @@ input, select, textarea {
             line-height: 35px; }
 
 .tcd__tour-list {
-  padding: 20px 0; }
+  padding: 20px 0;
+  overflow: hidden; }
   @media (min-width: 768px) {
     .tcd__tour-list {
       padding: 75px 0 40px 0; } }
@@ -9601,12 +9602,12 @@ input, select, textarea {
     left: -5px; }
     @media (min-width: 576px) {
       .tcd__tour-list .tcd__tour-list-slider .slick-arrow.slick-prev {
-        left: -40px; } }
+        left: -15px; } }
   .tcd__tour-list .tcd__tour-list-slider .slick-arrow.slick-next {
     right: -5px; }
     @media (min-width: 576px) {
       .tcd__tour-list .tcd__tour-list-slider .slick-arrow.slick-next {
-        right: -40px; } }
+        right: -15px; } }
   .tcd__tour-list .tcd__tour-list-slider .slick-arrow:before {
     color: #c4ced2;
     border-color: #c4ced2; }
